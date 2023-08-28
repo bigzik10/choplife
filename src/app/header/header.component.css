@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;700&family=Nunito:wght@200;300;400;500;600;700&family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;700&family=Nunito:wght@200;300;400;500;600;700&family=Outfit&family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+
+.header { 
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav {
+    width: 100%;
+    background-color: #c1cf65;
+    padding: 1rem 0;
+    position: fixed;
+    z-index: 10;
+}
+
+nav .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 0.6rem 1rem;
+    margin: 0 15px;
+}
+
+.search-bar input[type="search"] {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 30vw;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    padding: 5px;
+}
+
+nav .nav-options {
+    display: flex;
+    align-items: center;
+    color: #2D2D2D;
+    margin-left: 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(45, 45, 45, 0.40);
+    background-color: transparent;
+    gap: 20px;
+    padding: 7px;
+    cursor: pointer;
+    font-family: Commissioner;
+}
+
+.user-icon {
+    margin-right: 10px;
+}
+
