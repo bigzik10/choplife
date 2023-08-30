@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;700&family=Nunito:wght@200;300;400;500;600;700&family=Outfit&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;700&family=Nunito:wght@200;300;400;500;600;700&family=Outfit&family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
-
 .header { 
     width: 80%;
     margin: 0 auto;
@@ -10,7 +7,7 @@ nav {
     width: 100%;
     background-color: #c1cf65;
     padding: 1rem 0;
-    position: fixed;
+    position: relative;
     z-index: 10;
 }
 
@@ -57,3 +54,51 @@ nav .nav-options {
     margin-right: 10px;
 }
 
+.search-icon, .hamburger-icon {
+    display: none;
+}
+
+/* Your existing CSS styles */
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .header {
+      justify-content: space-between;
+      padding: 1rem;
+    }
+  
+    .search-icon {
+      display: block;
+    }
+  
+    .search-bar {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      padding: 1rem;
+      border-top: 1px solid #ddd;
+    }
+  
+    .search-bar.active {
+      display: flex;
+    }
+    button, .user-icon, {
+        display: none;
+    }
+  
+    .close-icon {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .hamburger-icon {
+      display: block;
+    }
+  
+    /* Additional styles for the hamburger menu */
+  }
+  

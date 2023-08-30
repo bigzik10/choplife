@@ -1,22 +1,29 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { OrderComponent } from './order/order.component';
+import { OrderTrackingComponent } from './order-tracking/order-tracking.component';
+import { CartComponent } from './cart/cart.component';
 import { HeaderComponent } from './header/header.component';
 import { CallNoticeComponent } from './call-notice/call-notice.component';
-import { SideNavComponent } from './side-nav/side-nav.component';
+import { FooterComponent } from './footer/footer.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
+    OrderComponent,
+    OrderTrackingComponent,
+    CartComponent,
     HeaderComponent,
     CallNoticeComponent,
-    SideNavComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

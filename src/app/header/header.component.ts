@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { SideNavStateService } from '../side-nav-state.service';
-
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -8,6 +7,11 @@ import { SideNavStateService } from '../side-nav-state.service';
 })
 export class HeaderComponent {
   constructor(private sideNavStateService: SideNavStateService) {}
+  searchBarActive = false;
+
+  toggleSearchBar() {
+    this.searchBarActive = !this.searchBarActive;
+  }
 
   toggleSideNav() {
     this.sideNavStateService.showSideNav = !this.sideNavStateService.showSideNav;
