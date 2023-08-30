@@ -1,0 +1,44 @@
+.t-size{
+    font-size: 12px;
+  }
+  
+
+  /* margins */
+  .margins{
+    margin-left: 12rem;
+  }
+
+  .navbar .btn {
+    white-space: nowrap !important;
+  }
+
+
+
+  .search-big {
+    width: 330px;
+  }
+  
+  /* .search-input {
+    width: 264px;
+    height: 17px;
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(45, 45, 45, 0.4);
+    mix-blend-mode: normal;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    border: 1.5px solid rgba(45, 45, 45, 0.4);
+  }
+  
+  .search-button {
+    width: 24px;
+    height: 24px;
+    mix-blend-mode: normal;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  } */

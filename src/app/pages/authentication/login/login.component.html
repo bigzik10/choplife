@@ -1,1 +1,545 @@
-<p>login works!</p>
+<!-- <div
+  class="offcanvas offcanvas-end"
+  tabindex="-1"
+  id="offcanvasExample"
+  aria-labelledby="offcanvasExampleLabel"
+>
+  <div *ngIf="selectform !== 'verification'">
+    <div class="offcanvas-header mt-1">
+      <h4 class="offcanvas-title fw-semibold" id="offcanvasExampleLabel">
+        Signup to ChopLife
+      </h4>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="container">
+        <div class="row">
+          <div class="shadow-none mb-4 bg-tertiary rounded-5">
+            <div class="row">
+              <div
+                class="col-6 rounded-5"
+                [ngClass]="{ 'bg-primary': activeform === 'verification' }"
+              >
+                <p
+                  class="text-center mt-2 textsize"
+                  (click)="activeform = 'verification'"
+                >
+                  User/Student
+                </p>
+              </div>
+
+              <div
+                class="col-6 rounded-5"
+                [ngClass]="{ active: activeform === 'vendor' }"
+              >
+                <p
+                  class="text-center mt-2 textsize"
+                  (click)="activeform = 'vendor'"
+                >
+                  Vendor
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div *ngIf="activeform !== 'vendor'">
+            <div
+              class="col-12 d-flex justify-content-center align-items-center"
+            >
+              <span class="bg-body-tertiary rounded-3 border-dark p-1">
+                <img
+                  src="../../../../assets/images/search.svg"
+                  class="p-1"
+                  alt=""
+                />
+              </span>
+              <span class="bg-body-tertiary rounded-3 border-dark p-1 ms-3">
+                <img
+                  src="../../../../assets/images/apple-logo.png"
+                  class="p-1"
+                  alt=""
+                />
+              </span>
+              <span class="bg-body-tertiary rounded-3 border-dark p-1 ms-3">
+                <img
+                  src="../../../../assets/images/facebook.svg"
+                  class="p-1"
+                  alt=""
+                />
+              </span>
+            </div>
+
+            <div class="row">
+              <div
+                class="col-4 border-top mt-3"
+                style="color: #f2ffcd !important"
+              ></div>
+              <p
+                class="col-4 justify-content-center align-items-center bottomfont mt-2"
+              >
+                Sign up with email
+              </p>
+              <div
+                class="col-4 border-top mt-3"
+                style="color: #f2ffcd !important"
+              ></div>
+            </div>
+
+            <form class="row g-3 needs-validation" novalidate>
+              <div class="col-md-6">
+                <label
+                  for="validationCustom01"
+                  class="form-label"
+                  style="color: #2d2d2d66"
+                  >First name</label
+                >
+                <input
+                  type="text"
+                  class="form-control bg-body-tertiary"
+                  id="validationCustom01"
+                  value="Mark"
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label
+                  for="validationCustom02"
+                  class="form-label"
+                  style="color: #2d2d2d66"
+                  >Last name</label
+                >
+                <input
+                  type="text"
+                  class="form-control bg-body-tertiary"
+                  id="validationCustom02"
+                  value="Otto"
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+              <div class="col-md-12">
+                <label
+                  for="validationCustomUsername"
+                  class="form-label"
+                  style="color: #2d2d2d66"
+                  >Phone Number</label
+                >
+                <div class="input-group has-validation">
+                  <span class="input-group-text" id="inputGroupPrepend"
+                    >234</span
+                  >
+                  <input
+                    type="text"
+                    class="form-control bg-body-tertiary"
+                    id="validationCustomUsername"
+                    aria-describedby="inputGroupPrepend"
+                    required
+                  />
+                  <div class="invalid-feedback">Please input a number</div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <label
+                  for="validationCustom03"
+                  class="form-label"
+                  style="color: #2d2d2d66"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control bg-body-tertiary"
+                  id="validationCustom03"
+                  value="user@email.com"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Please provide a valid email.
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="invalidCheck"
+                    required
+                  />
+                  <label class="form-check-label" for="invalidCheck">
+                    <a
+                      href=""
+                      class="text-decoration-none aggrementfont"
+                      style="color: #589466 !important"
+                    >
+                      <span style="color: #2d2d2d">
+                        I have read and accept the ChopLife
+                      </span>
+                      privacy policy
+                    </a>
+                  </label>
+                  <div class="invalid-feedback">
+                    You must agree before submitting.
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 rounded-3 d-flex justify-content-center">
+                <button
+                  class="mt-4 btn btn-success padding6 py-3"
+                  type="submit"
+                  (click)="selectform = 'verification'"
+                >
+                  Sign up
+                </button>
+              </div>
+
+              <a
+                href=""
+                class="text-decoration-none text-center"
+                data-bs-toggle="offcanvas" data-bs-target="#login"
+                style="color: #589466"
+                ><span class="" style="color: #2d2d2d">
+                  Already have an account,
+                </span>
+                Log in</a
+              >
+            </form>
+          </div>
+
+          <div *ngIf="activeform === 'vendor'">
+            <app-vendor></app-vendor>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="selectform === 'verification'">
+    <div *ngIf="showform2; else showform">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="staticBackdropLabel"></h5>
+      </div>
+      <div class="offcanvas-body">
+        <div class="mb-3 d-flex justify-content-center">
+          <img src="../../../../assets/images/image 14.png" alt="" />
+        </div>
+
+        <div class="authenticate mt-3">
+          <h3 class="mt-3 text-center">Operation Successful</h3>
+
+          <p class="mt-4 text-center sizefont">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labor.
+          </p>
+
+          <div
+            class="mt-5 border rounded-3 d-flex justify-content-center"
+            style="background: #c1cf65"
+          >
+            <button
+              class="btn sizefont padding6 py-3 text-muted text-center"
+              style="color: white !important"
+              type="submit"
+              (click)="onSubmit()"
+            >
+              Go to Dashboard
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ng-template #showform>
+      <div *ngIf="showform1; else elseBlock">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="staticBackdropLabel"></h5>
+        </div>
+        <div class="offcanvas-body">
+          <div class="mb-3 d-flex justify-content-center">
+            <img src="../../../../assets/images/image 17.png" alt="" />
+          </div>
+
+          <div
+            class="mt-3 progress dash"
+            role="progressbar"
+            aria-label="Basic example"
+            aria-valuenow="25"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div class="progress-bar green" style="width: 100%"></div>
+          </div>
+
+          <div class="authenticate mt-3">
+            <h3 class="mt-3 text-center">Authenticating...</h3>
+
+            <p class="mt-4 text-center sizefont">
+              Please Wait, it may take some time
+            </p>
+
+            <div
+              class="mt-5 border bg-body-tertiary rounded-3 d-flex justify-content-center"
+            >
+              <button
+                class="btn padding6 py-3 text-muted text-center"
+                type="submit"
+                (click)="onSubmit()"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ng-template #elseBlock>
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="VendorLabel">Authentication</h5>
+          <button
+            type="button"
+            class="btn btn-light"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+        </div>
+
+        <div class="offcanvas-body">
+          <div class="mb-3 sizefont">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labor.
+          </div>
+
+          <div class="mt-2">
+            <label
+              for="validationCustom01"
+              class="form-label"
+              style="color: #2d2d2d66"
+              >Enter the OTP sent to your email address</label
+            >
+            <div class="mt-3 col-12 d-flex">
+              <span class="bg-body-tertiary rounded-3 border-dark px-3">
+                <p class="text-center asterisk mt-3">*</p>
+              </span>
+              <span class="bg-body-tertiary rounded-3 border-dark px-3 ms-3">
+                <p class="text-center asterisk mt-3">*</p>
+              </span>
+              <span class="bg-body-tertiary rounded-3 border-dark px-3 ms-3">
+                <p class="text-center asterisk mt-3">*</p>
+              </span>
+              <span class="bg-body-tertiary rounded-3 border-dark px-3 ms-3">
+                <p class="text-center asterisk mt-3">*</p>
+              </span>
+              <span class="bg-body-tertiary rounded-3 border-dark px-3 ms-3">
+                <p class="text-center asterisk mt-3">*</p>
+              </span>
+            </div>
+
+            <div class="mt-3">
+              <a
+                href=""
+                class="text-decoration-none sizefont"
+                style="color: #5c7e64"
+              >
+                <span style="color: black">
+                  Note! The OTP expires after 20mins. <br />
+                  I did not get the One-Time Password (OTP)? </span
+                >Send again</a
+              >
+            </div>
+
+            <div class="bottomless d-flex justify-content-center">
+              <button
+                class="mt-4 btn btn-success padding6 py-3"
+                type="submit"
+                (click)="onSubmit()"
+              >
+                Submit
+              </button>
+            </div>
+            <div class="mt-2 d-flex justify-content-center mb-3">
+              <a
+                href=""
+                class="text-decoration-none text-center"
+                style="color: #589466"
+                ><span class="" style="color: #2d2d2d">
+                  Already have an account,
+                </span>
+                Log in</a
+              >
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </ng-template>
+  </div>
+</div> -->
+
+<div
+  class="offcanvas offcanvas-end"
+  tabindex="-1"
+  id="login"
+  aria-labelledby="loginLabel"
+>
+
+<div class="container">
+    <div class="offcanvas-header mt-1">
+      <h4 class="offcanvas-title fw-semibold" id="loginLabel ">
+        Log in to ChopLife
+      </h4>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <div class="offcanvas-body">
+        <div class="mt-1">
+            <p class="sizefont">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor.
+            </p>
+        </div>
+
+        <form class="row g-3 needs-validation" novalidate>
+          <div class="col-md-12">
+            <label
+              for="validationCustom03"
+              class="form-label"
+              style="color: #2d2d2d66"
+              >Email</label
+            >
+            <input
+              type="email"
+              class="form-control bg-body-tertiary"
+              id="validationCustom03"
+              value="user@email.com"
+              required
+            />
+            <div class="invalid-feedback">
+              Please provide a valid email.
+            </div>
+          </div>
+          <div class="col-md-12">
+            <label
+              for="validationCustom03"
+              class="form-label"
+              style="color: #2d2d2d66"
+              >Password</label
+            >
+            <input
+              type="password"
+              class="form-control bg-body-tertiary"
+              id="validationCustom03"
+              value="*****"
+              required
+            />
+            <div class="invalid-feedback">
+              Please provide a valid password.
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="invalidCheck"
+                required
+              />
+              <label class="form-check-label" for="invalidCheck">
+                <a
+                  href=""
+                  class="text-decoration-none aggrementfont"
+                  style="color: #589466 !important"
+                >
+                  <span style="color: #2d2d2d">
+                    Remember me
+                  </span>
+                </a>
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+        </div>
+        <div class="container mt-2">
+              <div class="row">
+                <div
+                  class="col-4 border-top mt-3"
+                  style="color: #f2ffcd !important"
+                ></div>
+                <p
+                  class="col-4 text-center justify-content-center align-items-center bottomfont mt-2"
+                >
+                  Use email
+                </p>
+                <div
+                  class="col-4 border-top mt-3"
+                  style="color: #f2ffcd !important"
+                ></div>
+              </div>
+
+              <div
+                class="col-12 d-flex justify-content-center align-items-center"
+              >
+                <span class="bg-body-tertiary rounded-3 border-dark p-1">
+                  <img
+                    src="../../../../assets/images/search.svg"
+                    class="p-1"
+                    alt=""
+                  />
+                </span>
+                <span class="bg-body-tertiary rounded-3 border-dark p-1 ms-5">
+                  <img
+                    src="../../../../assets/images/apple-logo.png"
+                    class="p-1"
+                    alt=""
+                  />
+                </span>
+                <span class="bg-body-tertiary rounded-3 border-dark p-1 ms-5">
+                  <img
+                    src="../../../../assets/images/facebook.svg"
+                    class="p-1"
+                    alt=""
+                  />
+                </span>
+              </div>
+      
+      
+            </div>
+          <div class="col-12 rounded-3 d-flex justify-content-center">
+            <button
+              class="mt-4 btn btn-success padding6 py-3"
+              type="submit"
+              style="background-color: #589466 !important;"
+              
+            >
+              Log in
+            </button>
+          </div>
+
+          <a
+            href=""
+            class="text-decoration-none text-center"
+            style="color: #589466"
+            ><span class="" style="color: #2d2d2d">
+              I am new here,
+            </span>
+            Register</a
+          >
+        </form>
+      </div>
+</div>
+  
+   
+  </div>
+
+
+
+<app-signup></app-signup>

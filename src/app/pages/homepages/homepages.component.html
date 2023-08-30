@@ -1,1 +1,124 @@
-<p>homepages works!</p>
+<section> 
+    <div class="background" style="background: #5C7E64;">
+        <div class="text-midde py-3">
+            <h6 class="text-center text-white mt-1">NEED HELP PLACING AN ORDER? CALL:0912345678 OR 0912345678 // OPEN FROM 8AM TO 10PM.</h6>
+        </div>
+    </div>
+   <nav class="navbar navbar-dark navbar-expand-lg">
+            <div class="container p-1">
+              <a class="navbar-brand mb-2">
+                <img [src]="logo1" alt="" class="size">
+              </a>
+        
+              <button
+                type="button"
+                class="navbar-toggler button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      
+      
+                  <!-- <form class="search-box">
+                      <input type="text" placeholder=""/>
+                      <button type="search"></button>
+                  </form> -->
+                  <ul class="navbar-nav margins mb-3 mb-lg-0 ">
+      
+      
+                    <div class="input-group border search-big">
+                      <input type="text" class="form-control bg-body-tertiary text-white" placeholder="">
+                      <div class="input-group-append">
+                        <button class="btn bg-body-tertiary" type="button">
+                          <i class=" fas fa-search" style="color: #2D2D2D66;"></i>
+                        </button>
+                      </div>
+                    </div>
+      
+             
+                </ul>
+                  <div class="navbar-nav mx-2  p-2 ">
+                  
+                  <div class="row">
+                    <div class="col-12 col-md-9 col-lg-10">
+      
+                      <div class="d-flex align-items-center">
+      
+                        <li class="nav-item mx-3">
+            
+                        
+                          <a
+                            class="nav-link poppins text-muted f-10 text-nowrap"
+                            [routerLink]="['']"
+                            routerLinkActive="active_link"
+                            [routerLinkActiveOptions]="{ exact: true }"
+                            >Hot Meals</a
+                          >
+                        </li>
+              
+                        <li class="nav-item mx-3">
+                          <a
+                            class="nav-link poppins text-muted f-10"
+                            href="about"
+                            [routerLink]="['/about']"
+                            routerLinkActive="active_link"
+                            [routerLinkActiveOptions]="{ exact: true }"
+                            >About</a
+                          >
+                        </li>
+              
+                        <li class="nav-item mx-3">
+                          <a
+                            class="nav-link poppins text-muted f-10 text-nowrap"
+                            [routerLink]="['Help']"
+                            routerLinkActive="active_link"
+                            [routerLinkActiveOptions]="{ exact: true }"
+                            >Contact us</a
+                          >
+                        </li>
+                  
+              
+                        <!-- <li class="nav-item">
+                          <button
+                            class="nav-link btn btn-success px-5 py-2"
+                            [routerLink]="['Profile']"
+                            routerLinkActive="active_link"
+                            [routerLinkActiveOptions]="{ exact: true }"
+                            >Get Started
+                            </button>
+                        </li> -->
+
+                        <li class="nav-item mx-3" role="presentation">
+                          <div class="d-flex">
+
+                            <button class="btn btn-success px-5 py-2 text-start flex-row" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" > <span class="t-size">
+                              
+                              Get Started
+                            </span>
+                
+                          </button>
+                          </div>
+                        </li> 
+              
+            
+    
+                      </div>
+                    </div>
+                  </div>
+                  
+                  
+                  
+                </div>
+              </div>
+            </div>
+          </nav>
+</section>
+<app-login></app-login>
+
+<router-outlet></router-outlet>

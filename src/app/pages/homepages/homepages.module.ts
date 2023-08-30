@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { HomepagesRoutingModule } from './homepages-routing.module';
 import { HomepagesComponent } from './homepages.component';
+import { LoginModule } from '../authentication/login/login.module';
+
 
 
 @NgModule({
@@ -11,7 +13,9 @@ import { HomepagesComponent } from './homepages.component';
   ],
   imports: [
     CommonModule,
-    HomepagesRoutingModule
+    HomepagesRoutingModule,
+    LoginModule,
+  
   ]
 })
 export class HomepagesModule { }
