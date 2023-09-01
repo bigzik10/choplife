@@ -8,6 +8,9 @@ import { CartComponent } from './cart/cart.component';
 import { HeaderComponent } from './header/header.component';
 import { CallNoticeComponent } from './call-notice/call-notice.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
+import { OrderTrackComponent } from './order-track/order-track.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 
 
@@ -19,7 +22,10 @@ import { FooterComponent } from './footer/footer.component';
     CartComponent,
     HeaderComponent,
     CallNoticeComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    OrderTrackComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
