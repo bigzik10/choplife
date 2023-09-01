@@ -1,0 +1,21 @@
+/* Fonts */
+.textsize{
+    font-size: 12px;
+}
+.bottomfont{
+    font-size: 10px;
+    color: #2D2D2D66;
+}
+
+.aggrementfont{
+    font-size: 13px;
+}
+/* fonts end */
+
+
+.padding6{
+    padding-left: 8rem;
+    padding-right: 8rem;
+    /* padding-top: 0.5rem;
+    padding-bottom: 0.2rem; */
+}

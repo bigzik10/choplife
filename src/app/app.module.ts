@@ -13,24 +13,26 @@ import { OrderTrackComponent } from './order-track/order-track.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 
 
+import { LoginModule } from './pages/authentication/login/login.module';
+
+// import { VendorComponent } from './pages/authentication/vendor/vendor.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    OrderComponent,
-    OrderTrackingComponent,
-    CartComponent,
-    HeaderComponent,
-    CallNoticeComponent,
     FooterComponent,
-    HomeComponent,
-    OrderTrackComponent,
-    ContactUsComponent
+    HeaderComponent,
+    ContactUsComponent,
+    CallNoticeComponent,
+
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    LoginModule
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })

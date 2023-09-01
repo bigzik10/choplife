@@ -1,0 +1,21 @@
+.sizefont{
+    font-size: 14px;
+}
+
+.asterisk{
+    font-size: 22px !important;
+}
+
+
+
+
+
+.bottomless{
+    margin-top: 10rem;
+}
+.padding6{
+    padding-left: 8rem;
+    padding-right: 8rem;
+    /* padding-top: 0.5rem;
+    padding-bottom: 0.2rem; */
+}
