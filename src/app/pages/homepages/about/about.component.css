@@ -1,0 +1,48 @@
+.home_bg {
+    background: url("../../../../assets/images/aboutimage.svg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    height: 38.5rem;
+    width: auto;
+    /* background-color: #071050; */
+  }
+
+
+
+
+  .bottom{
+    padding-bottom: 20rem;
+  }
+
+
+  /* colors */
+
+  .btn-success{
+    background-color:#5C7E64 !important;
+  }
+
+  .whitesmoke{
+    border-color:rgba(255, 255, 255, 0.2);
+    
+}
+
+
+
+
+
+
+
+
+  /* margins */
+  .margin6{
+    margin-top: 8.5rem;
+  }
+
+  .margins{
+    margin-top: 5rem !important;
+  }
+
+  .padding6{
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
