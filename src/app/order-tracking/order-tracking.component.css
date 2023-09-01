@@ -1,0 +1,147 @@
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    padding-top: 5px;
+    color: #2D2D2D;
+  }
+  
+  .back-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .back-button i {
+    font-size: 24px;
+  }
+  
+  .breadcrumb span {
+    margin: 0 5px;
+  }
+  
+  .breadcrumb span a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #2D2D2D;
+  }
+  
+  .breadcrumb i {
+    color: #777;
+  }
+  /* Nav Indicator Style ends */
+
+.hold {
+    display: flex;
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 1200px;
+  }
+  .hold span {
+    color: #5C7E64;
+  }
+  .order-details {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    width: calc(100% - 450px);
+  }
+  
+  .order-details h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .order-details-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .detail {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .address{
+    display: block;
+    align-self: stretch;
+  }
+  
+  .hold .detail-value {
+    font-weight: bold;
+    color: #2D2D2D;
+  }
+  
+  
+  .progress-bar1 {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.status-monitor {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 15px auto;
+    padding-left: 55px;
+}
+
+.progress-line {
+    position: absolute;
+    margin-top: 50px;
+    width: 7px;
+    height: 75%;
+    background-color: #c1cf65;
+    left: 23px;
+    top: 0;
+}
+
+.circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 7px solid #c1cf65;
+}
+
+.circle:nth-child(3) {
+    top: 10%;
+}
+
+.circle:nth-child(4) {
+    top: 30%;
+}
+
+.circle:nth-child(5) {
+    top: 50%;
+}
+
+.circle:nth-child(6) {
+  top: 70%;
+}
+
+.circle span {
+    position: absolute;
+    top: 50%;
+    left: 60px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.circle p {
+    position: absolute;
+    font-size: 12px;
+    text-align: center;
+    left: 40px;
+    top: 100%;
+    transform: translateY(5px);
+    width: 140px;
+}

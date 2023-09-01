@@ -1,0 +1,102 @@
+.header { 
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav {
+    width: 100%;
+    background-color: #c1cf65;
+    padding: 1.5rem 0;
+    position: relative;
+    z-index: 10;
+}
+
+nav .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 0.6rem 1rem;
+    margin: 0 15px;
+}
+
+.search-bar input[type="search"] {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 30vw;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    padding: 5px;
+}
+
+nav .nav-options {
+    display: flex;
+    align-items: center;
+    color: #2D2D2D;
+    margin-left: 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(45, 45, 45, 0.40);
+    background-color: transparent;
+    gap: 20px;
+    padding: 7px;
+    cursor: pointer;
+    font-family: Commissioner;
+}
+
+.user-icon {
+    margin-right: 10px;
+}
+
+.search-icon, .hamburger-icon {
+    display: none;
+}
+
+/* Your existing CSS styles */
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .header {
+      justify-content: space-between;
+      padding: 1rem;
+    }
+  
+    .search-icon {
+      display: block;
+    }
+  
+    .search-bar {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      padding: 1rem;
+      border-top: 1px solid #ddd;
+    }
+  
+    .search-bar.active {
+      display: flex;
+    }
+    button, .user-icon, {
+        display: none;
+    }
+  
+    .close-icon {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .hamburger-icon {
+      display: block;
+    }
+  }
+  

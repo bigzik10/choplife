@@ -1,0 +1,286 @@
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    padding-top: 5px;
+    color: #2D2D2D;
+  }
+  
+  .back-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .back-button i {
+    font-size: 24px;
+  }
+  
+  .breadcrumb span {
+    margin: 0 5px;
+  }
+  
+  .breadcrumb span a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #2D2D2D;
+  }
+  
+  .breadcrumb i {
+    color: #777;
+  }
+  /* Nav Indicator Style ends */
+
+  .order-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+  }
+  
+  .order {
+    padding: 15px;
+    text-align: center;
+    flex: 1;
+    max-width: 400px;
+    height: 100px;
+    position: relative;
+    border-top: 1px solid #EEE;
+    border-bottom: 1px solid #EEE;
+    background-color: #F8F9F9;
+  }
+
+  .order:nth-child(1){
+    border-left: 1px solid #EEE;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+
+  .order:nth-child(3){
+    border-right: 1px solid #EEE;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+
+  .order.no-line::before {
+    display: none;
+  }
+
+  .order::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -1px; 
+    transform: translateY(-50%);
+    width: 4px; 
+    height: 70px; /* Adjust this value for the desired height of the line */
+    background-color: #ccc; 
+  }
+
+  .order h4 {
+    font-size: 15px;
+  }
+
+  .order span {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .status {
+    margin: 50px auto;
+    text-align: center;
+  }
+
+  .status h4{
+    margin: 0;
+  }
+
+  .status p {
+    margin-top: 5px;
+  }
+
+  .status .order-status {
+    color: #256FEF;
+  }
+
+
+  .container {
+    max-width: 500px;
+    width: 100%;
+    margin: 80px auto;
+  }
+
+  .container .steps {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+  }
+
+  .steps .circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #fff;
+    border: 7px solid #C1CF65;
+  }
+
+  .circle-text {
+    margin-top: 40px; /* Reduce the margin for smaller screens */
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .order-date {
+    font-size: 14px; /* Adjust font size for smaller screens */
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 3px;
+    white-space: nowrap;
+  }
+
+  .steps .progress-bar1 {
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #777;
+    z-index: -1;
+  }
+
+  .progress-bar1 .indicator {
+    position: absolute;
+    height: 100%;
+    width: 45%;
+    background: #C1CF65;
+  }
+
+  .customer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 600px; /* Set a maximum width for responsiveness */
+  }
+  
+  .info-hold {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+  }
+  
+  .center-text {
+    text-align: center;
+  }
+  
+  .left-info,
+  .right-info {
+    flex-basis: 50%;
+    text-align: left;
+    margin: 5px 0; /* Add some margin for spacing */
+  }
+  
+  .left-info p,
+  .right-info p {
+    margin: 0;
+  }
+  
+  strong {
+    font-weight: bold;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+
+    .breadcrumb {
+        font-size: 14px;
+    }
+
+    .back-button i {
+        font-size: 14px;
+      }
+
+      .order-container {
+        max-width: 400px;
+      }
+    .order {
+        max-width: 100%;
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
+        margin-bottom: 10px;
+    }
+
+    .order:nth-child(1){
+        border-left: none;
+        height: 76px;
+      }
+    
+      .order:nth-child(3){
+        border-right: none;
+
+      }
+
+    .order:before {
+        width: 3px;
+        height: 30px;
+    }
+
+    .order h4 {
+        font-size: 10px;
+    }
+
+    .order span {
+        font-size: 13px;
+    }
+
+    .customer-info {
+        max-width: 300px;
+    }
+  }
+@media (max-width: 480px) {
+    .container {
+        max-width: 250px;
+    }
+    .steps .circle {
+      width: 30px;
+      height: 30px; /* Decrease circle size for smaller screens */
+      margin: 0px 10px;
+    }
+    
+  
+    .circle-text {
+      margin-top: 40px;
+      font-size: 11px; /* Further reduce font size for smaller screens */
+    }
+  
+    .order-date {
+      font-size: 12px;
+    }
+
+    .left-info,
+    .right-info {
+      flex-basis: 100%; /* Full width on smaller screens */
+    }
+  }
+  
+  
+  
