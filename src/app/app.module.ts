@@ -24,6 +24,10 @@ import { LoginModule } from './pages/authentication/login/login.module';
     HeaderComponent,
     ContactUsComponent,
     CallNoticeComponent,
+    CartComponent,
+    OrderComponent,
+    OrderTrackingComponent,
+    OrderTrackComponent
 
     
   ],
