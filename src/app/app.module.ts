@@ -14,6 +14,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 
 
 import { LoginModule } from './pages/authentication/login/login.module';
+import { NewsletterComponent } from './newsletter/newsletter.component';
 
 // import { VendorComponent } from './pages/authentication/vendor/vendor.component';
 
@@ -27,7 +28,8 @@ import { LoginModule } from './pages/authentication/login/login.module';
     CartComponent,
     OrderComponent,
     OrderTrackingComponent,
-    OrderTrackComponent
+    OrderTrackComponent,
+    NewsletterComponent
 
     
   ],
