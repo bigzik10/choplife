@@ -10,6 +10,7 @@ import { Component } from '@angular/core';
 
 
 export class OrderComponent {
+
   //  orders can be replaced with api to fetch data
   // orders: any[] = [
   //   {
