@@ -135,6 +135,102 @@ textarea {
     background-color: #c1cf65;
 }
 
+.newsletter {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 3.5rem;
+    background-color: #2d2d2d;
+    margin-top: 20px;
+    padding: 80px 13% 70px;
+    color: #fff;
+}
+
+.newsletter-section p{
+    font-size: 45px;
+    font-weight: bold;
+    font-family: Commissioner;
+}
+
+.subscribe-form {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+input[type="email"] {
+    width: 50%;
+    max-width: 500px;
+    padding: 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 0;
+}
+
+button[type="submit"] {
+    max-width: 350px;
+    width: 30%; /* Adjust the width as needed */
+    padding: 11px 10px; /* Add padding */
+    background-color: #5C7E64; /* Green background color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    border-top-left-radius: none;
+    border-bottom-left-radius: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #4B6B53; /* Darker green on hover */
+}
+
+.follow-us p{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon a {
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    background-color: #c1cf65;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon svg {
+    width: 30px;
+    height: 30px;
+} 
+
 
 
 @media screen and (max-width: 1550px) {

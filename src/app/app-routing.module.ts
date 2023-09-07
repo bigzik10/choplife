@@ -1,10 +1,16 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { OrderComponent } from './order/order.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { AboutComponent } from './pages/homepages/about/about.component';
+import { HotmealsComponent } from './hotmeals/hotmeals.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
   { path: 'order', component: OrderComponent},
+  { path: 'contactus', component: ContactUsComponent},
+  { path: 'aboutus', component: AboutComponent},
+  { path: 'hotmeal', component: HotmealsComponent},
 
   {
     path: '',
