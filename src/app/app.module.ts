@@ -14,7 +14,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 
 
 import { LoginModule } from './pages/authentication/login/login.module';
-import { NewsletterComponent } from './newsletter/newsletter.component';
+import { HotmealsComponent } from './hotmeals/hotmeals.component';
+
 
 // import { VendorComponent } from './pages/authentication/vendor/vendor.component';
 
@@ -29,7 +30,7 @@ import { NewsletterComponent } from './newsletter/newsletter.component';
     OrderComponent,
     OrderTrackingComponent,
     OrderTrackComponent,
-    NewsletterComponent
+    HotmealsComponent
 
     
   ],
