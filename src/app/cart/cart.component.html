@@ -1,112 +1,84 @@
 <div class="hidden">
-  <div class="cart-container">
-    <div class="head">
-      <button class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="26" viewBox="0 0 38 26" fill="none">
-        <path d="M24.4494 2.10132L35.3481 13M35.3481 13L24.4494 23.8988M35.3481 13L2.65198 13" stroke="#2D2D2D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg></button>
-      <div class="dis dis-green">
-      <span>My Cart</span>
-      <div class="icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 38 39" fill="none">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M2.04175 0.291748C1.28236 0.291748 0.666748 0.907357 0.666748 1.66675C0.666748 2.42614 1.28236 3.04175 2.04175 3.04175H5.70842C6.97404 3.04175 8.00004 4.06772 8.00008 5.33333H10.7501C10.75 2.54893 8.49282 0.291748 5.70842 0.291748H2.04175Z" fill="white"/>
-          <path opacity="0.4" d="M8 5.33325H30C34.0501 5.33325 37.3333 8.6165 37.3333 12.6666V21.8333C37.3333 25.8833 34.0501 29.1666 30 29.1666H15.3333C11.2832 29.1666 8 25.8833 8 21.8333V5.33325Z" fill="white"/>
-          <circle cx="14.4167" cy="35.5835" r="2.75" fill="white"/>
-          <circle cx="30.9167" cy="35.5835" r="2.75" fill="white"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M29.3642 19.325C29.7372 19.9865 29.5033 20.825 28.8418 21.198C26.614 22.454 24.6951 23.2047 22.6717 23.2086C20.6458 23.2125 18.7232 22.4677 16.4866 21.1954C15.8265 20.8199 15.5959 19.9804 15.9714 19.3204C16.3468 18.6603 17.1863 18.4296 17.8464 18.8051C19.9294 19.9901 21.3504 20.4611 22.6664 20.4586C23.9849 20.456 25.4062 19.978 27.4912 18.8025C28.1527 18.4295 28.9913 18.6635 29.3642 19.325Z" fill="white"/>
-        </svg>
-      </div>
+  <div class="font-sans bg-white p-2.5 rounded-lg shadow max-w-sm shrink-0 mx-auto m-40">
+    <div class="p-2.5 mb-2.5">
+      <div class="dis dis-green flex items-center justify-between">
+        <button class="btn pt-1 pb-0 px-1.5 ml-1"><i class="fa-solid fa-arrow-left" style="color: #f2eded;"></i></button>
+      <span class="whitespace-nowrap text-lg">My Cart</span>
+      <div class="icon mr-1"><img src="assets/images/cart.svg" alt=""></div>
       </div>
     </div>
-    <div class="info">
-      <p class="qty-item">Order From: <span class="qty">Vendor Name </span></p>
-      <p class="qty-item">Esitimated Delivery Time: <span class="qty">24-45 mins</span></p>
+    <div class="my-3">
+      <p class="flex items-center justify-between"><span>Order From:</span> <span class="text-base font-semibold">Vendor Name </span></p>
+      <p class="flex items-center justify-between"><span>Esitimated Delivery Time:</span> <span class="text-base font-semibold">24-45 mins</span></p>
     </div>
     <hr>
       <div class="item">
-          <button class="delete-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path d="M3.33333 5.3335V12.0002C3.33333 13.4729 4.52724 14.6668 6 14.6668H10C11.4728 14.6668 12.6667 13.4729 12.6667 12.0002V5.3335M9.33333 7.3335V11.3335M6.66667 7.3335L6.66667 11.3335M10.6667 3.3335L9.72916 1.92723C9.48187 1.5563 9.06556 1.3335 8.61975 1.3335H7.38025C6.93444 1.3335 6.51813 1.5563 6.27084 1.92723L5.33333 3.3335M10.6667 3.3335H5.33333M10.6667 3.3335H14M5.33333 3.3335H2" stroke="#2D2D2D" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg></button>
+          <button class="delete-btn"><img src="assets/images/delete.svg" alt=""></button>
           <div class="item-details">
               <div class="item-name-price">
-              <span class="item-name">Hot Big Plantain</span>
-              <span class="item-price">₦1,400</span>
+              <span class="block text-sm pl-1.5 leading-normal font-bold w-30">Hot Big Plantain</span>
+              <span class="text-lg pl-1.5 mt-1.5 leading-normal font-semibold">₦1,400</span>
               </div>
               <div class="quantity">
-              <button id="quantity-btn minus"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
-                  <path d="M4.61482 8.59473L12.8037 8.59473" stroke="#2D2D2D" stroke-width="1.02361" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg></button>
+              <button id="quantity-btn minus"><i class="fa-solid fa-minus" style="color: #464749;"></i></button>
               <input id="number" type="number" min="1" class="quantity-input" value="1">
-              <button id="quantity-btn plus"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
-                  <path d="M8.84208 4.5V12.6889M4.74763 8.59444L12.9365 8.59444" stroke="#2D2D2D" stroke-width="1.02361" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg></button>
+              <button id="quantity-btn plus"><i class="fa-solid fa-plus" style="color: #464749;"></i></button>
               </div>
           </div>
           
       </div>
       <div class="item">
-        <button class="delete-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-<path d="M3.33333 5.3335V12.0002C3.33333 13.4729 4.52724 14.6668 6 14.6668H10C11.4728 14.6668 12.6667 13.4729 12.6667 12.0002V5.3335M9.33333 7.3335V11.3335M6.66667 7.3335L6.66667 11.3335M10.6667 3.3335L9.72916 1.92723C9.48187 1.5563 9.06556 1.3335 8.61975 1.3335H7.38025C6.93444 1.3335 6.51813 1.5563 6.27084 1.92723L5.33333 3.3335M10.6667 3.3335H5.33333M10.6667 3.3335H14M5.33333 3.3335H2" stroke="#2D2D2D" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-</svg></button>
+        <button class="delete-btn"><img src="assets/images/delete.svg" alt=""></button>
         <div class="item-details">
             <div class="item-name-price">
-            <span class="item-name">A use case where the item name breaks in two or more line</span>
-            <span class="item-price">₦1,400</span>
+            <span class="block text-sm pl-1.5 leading-normal font-bold w-30">A use case where the item name breaks in two or more line</span>
+            <span class="text-lg pl-1.5 mt-1.5 leading-normal font-semibold">₦1,400</span>
             </div>
             <div class="quantity">
-            <button id="quantity-btn minus"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
-                <path d="M4.61482 8.59473L12.8037 8.59473" stroke="#2D2D2D" stroke-width="1.02361" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg></button>
+            <button id="quantity-btn minus"><i class="fa-solid fa-minus" style="color: #464749;"></i></button>
             <input id="number" type="number" min="1" class="quantity-input" value="1">
-            <button id="quantity-btn plus"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
-                <path d="M8.84208 4.5V12.6889M4.74763 8.59444L12.9365 8.59444" stroke="#2D2D2D" stroke-width="1.02361" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg></button>
+            <button id="quantity-btn plus"><i class="fa-solid fa-plus" style="color: #464749;"></i></button>
             </div>
         </div>
         
     </div>
     <div class="item">
-      <button class="delete-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-<path d="M3.33333 5.3335V12.0002C3.33333 13.4729 4.52724 14.6668 6 14.6668H10C11.4728 14.6668 12.6667 13.4729 12.6667 12.0002V5.3335M9.33333 7.3335V11.3335M6.66667 7.3335L6.66667 11.3335M10.6667 3.3335L9.72916 1.92723C9.48187 1.5563 9.06556 1.3335 8.61975 1.3335H7.38025C6.93444 1.3335 6.51813 1.5563 6.27084 1.92723L5.33333 3.3335M10.6667 3.3335H5.33333M10.6667 3.3335H14M5.33333 3.3335H2" stroke="#2D2D2D" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-</svg></button>
+      <button class="delete-btn"><img src="assets/images/delete.svg" alt=""></button>
       <div class="item-details">
           <div class="item-name-price">
-          <span class="item-name">A use case where the item name breaks in two or more line</span>
-          <span class="item-price">₦1,400</span>
+          <span class="block text-sm pl-1.5 leading-normal font-bold w-30">A use case where the item name breaks in two or more line</span>
+          <span class="text-lg pl-1.5 mt-1.5 leading-normal font-semibold">₦1,400</span>
           </div>
           <div class="quantity">
-          <button id="quantity-btn minus"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
-              <path d="M4.61482 8.59473L12.8037 8.59473" stroke="#2D2D2D" stroke-width="1.02361" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg></button>
+          <button id="quantity-btn minus"><i class="fa-solid fa-minus" style="color: #464749;"></i></button>
           <input id="number" type="number" min="1" class="quantity-input" value="1">
-          <button id="quantity-btn plus"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
-              <path d="M8.84208 4.5V12.6889M4.74763 8.59444L12.9365 8.59444" stroke="#2D2D2D" stroke-width="1.02361" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg></button>
+          <button id="quantity-btn plus"><i class="fa-solid fa-plus" style="color: #464749;"></i></button>
           </div>
       </div>
       
   </div>
   <hr>
-  <div class="total">
-    <span>Subtotal:</span>
-    <span class="total-amount">₦3,600</span>
+  <div class="flex items-center justify-between">
+    <span class="text-base">Subtotal:</span>
+    <span class="text-base font-semibold">₦3,600</span>
 </div>
-<div class="total">
-  <span>Delivery Fee:</span>
-  <span class="total-amount">₦400</span>
+<div class="flex items-center justify-between">
+  <span class="text-base">Delivery Fee:</span>
+  <span class="text-base font-semibold">₦400</span>
 </div>
-<div class="total">
-  <span>Discount</span>
-  <span class="total-amount">N/A</span>
+<div class="flex items-center justify-between">
+  <span class="text-base">Discount</span>
+  <span class="text-base font-semibold">N/A</span>
 </div>
-<div class="total">
-  <span>VAT:</span>
-  <span class="total-amount">₦300</span>
+<div class="flex items-center justify-between">
+  <span class="text-base">VAT:</span>
+  <span class="text-base font-semibold">₦300</span>
 </div>
-<div class="total">
-  <span>Total</span>
-  <span class="total-amount">₦7,600</span>
+<div class="flex items-center justify-between">
+  <span class="text-base font-semibold">Total</span>
+  <span class="text-base font-semibold">₦7,600</span>
 </div>
-<button class="checkout-btn btn-green">Pay & Checkout</button>
+<button class="checkout-btn btn-green mt-5">Pay & Checkout</button>
 <button class="clear-btn btn-green">Back to Shopping</button>
     </div>
     
@@ -116,95 +88,68 @@
 
 <!-- Cart Full Page Start -->
 <div class="hidden">
-    <div class="cart-container">
-      <div class="head">
-        <button class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="26" viewBox="0 0 38 26" fill="none">
-          <path d="M24.4494 2.10132L35.3481 13M35.3481 13L24.4494 23.8988M35.3481 13L2.65198 13" stroke="#2D2D2D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg></button>
-        <div class="dis">
-        <span>My Cart</span>
-        <div class="icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 38 39" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.04175 0.291748C1.28236 0.291748 0.666748 0.907357 0.666748 1.66675C0.666748 2.42614 1.28236 3.04175 2.04175 3.04175H5.70842C6.97404 3.04175 8.00004 4.06772 8.00008 5.33333H10.7501C10.75 2.54893 8.49282 0.291748 5.70842 0.291748H2.04175Z" fill="white"/>
-            <path opacity="0.4" d="M8 5.33325H30C34.0501 5.33325 37.3333 8.6165 37.3333 12.6666V21.8333C37.3333 25.8833 34.0501 29.1666 30 29.1666H15.3333C11.2832 29.1666 8 25.8833 8 21.8333V5.33325Z" fill="white"/>
-            <circle cx="14.4167" cy="35.5835" r="2.75" fill="white"/>
-            <circle cx="30.9167" cy="35.5835" r="2.75" fill="white"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M29.3642 19.325C29.7372 19.9865 29.5033 20.825 28.8418 21.198C26.614 22.454 24.6951 23.2047 22.6717 23.2086C20.6458 23.2125 18.7232 22.4677 16.4866 21.1954C15.8265 20.8199 15.5959 19.9804 15.9714 19.3204C16.3468 18.6603 17.1863 18.4296 17.8464 18.8051C19.9294 19.9901 21.3504 20.4611 22.6664 20.4586C23.9849 20.456 25.4062 19.978 27.4912 18.8025C28.1527 18.4295 28.9913 18.6635 29.3642 19.325Z" fill="white"/>
-          </svg>
-        </div>
+    <div class="font-sans bg-white p-2.5 rounded-lg shadow max-w-sm shrink-0 mx-auto m-40">
+      <div class="p-2.5 mb-2.5">
+        <div class="dis flex items-center justify-between">
+          <button class="btn pt-1 pb-0 px-1.5 ml-1"><i class="fa-solid fa-x" style="color: #fcfcfd;"></i></button>
+        <span class="whitespace-nowrap text-lg">My Cart</span>
+        <div class="icon mr-1"><img src="assets/images/cart.svg" alt=""></div>
         </div>
       </div>
-      <p class="qty-item">Total item(s) in Cart: <span class="qty">6</span></p>
+      <p class="flex items-center justify-between my-3">
+        <span class="text-base">Total item(s) in Cart:</span> <span class="text-right mr-2.5 text-base font-semibold">6</span></p>
       <hr>
         <div class="item">
-            <button class="delete-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path d="M3.33333 5.3335V12.0002C3.33333 13.4729 4.52724 14.6668 6 14.6668H10C11.4728 14.6668 12.6667 13.4729 12.6667 12.0002V5.3335M9.33333 7.3335V11.3335M6.66667 7.3335L6.66667 11.3335M10.6667 3.3335L9.72916 1.92723C9.48187 1.5563 9.06556 1.3335 8.61975 1.3335H7.38025C6.93444 1.3335 6.51813 1.5563 6.27084 1.92723L5.33333 3.3335M10.6667 3.3335H5.33333M10.6667 3.3335H14M5.33333 3.3335H2" stroke="#2D2D2D" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg></button>
+            <button class="delete-btn"><img src="assets/images/delete.svg" alt=""></button>
             <div class="item-details">
                 <div class="item-name-price">
-                <span class="item-name">Hot Big Plantain</span>
-                <span class="item-price">₦1,400</span>
+                <span class="block text-sm pl-1.5 leading-normal font-bold w-30">Hot Big Plantain</span>
+                <span class="text-lg pl-1.5 mt-1.5 leading-normal font-semibold">₦1,400</span>
                 </div>
                 <div class="quantity">
-                <button id="quantity-btn minus"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
-                    <path d="M4.61482 8.59473L12.8037 8.59473" stroke="#2D2D2D" stroke-width="1.02361" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg></button>
+                <button id="quantity-btn minus"><i class="fa-solid fa-minus" style="color: #464749;"></i></button>
                 <input id="number" type="number" min="1" class="quantity-input" value="1">
-                <button id="quantity-btn plus"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
-                    <path d="M8.84208 4.5V12.6889M4.74763 8.59444L12.9365 8.59444" stroke="#2D2D2D" stroke-width="1.02361" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg></button>
+                <button id="quantity-btn plus"><i class="fa-solid fa-plus" style="color: #464749;"></i></button>
                 </div>
             </div>
             
         </div>
         <div class="item">
-          <button class="delete-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-<path d="M3.33333 5.3335V12.0002C3.33333 13.4729 4.52724 14.6668 6 14.6668H10C11.4728 14.6668 12.6667 13.4729 12.6667 12.0002V5.3335M9.33333 7.3335V11.3335M6.66667 7.3335L6.66667 11.3335M10.6667 3.3335L9.72916 1.92723C9.48187 1.5563 9.06556 1.3335 8.61975 1.3335H7.38025C6.93444 1.3335 6.51813 1.5563 6.27084 1.92723L5.33333 3.3335M10.6667 3.3335H5.33333M10.6667 3.3335H14M5.33333 3.3335H2" stroke="#2D2D2D" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-</svg></button>
+          <button class="delete-btn"><img src="assets/images/delete.svg" alt=""></button>
           <div class="item-details">
               <div class="item-name-price">
-              <span class="item-name">A use case where the item name breaks in two or more line</span>
-              <span class="item-price">₦1,400</span>
+              <span class="block text-sm pl-1.5 leading-normal font-bold w-30">A use case where the item name breaks in two or more line</span>
+              <span class="text-lg pl-1.5 mt-1.5 leading-normal font-semibold">₦1,400</span>
               </div>
               <div class="quantity">
-              <button id="quantity-btn minus"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
-                  <path d="M4.61482 8.59473L12.8037 8.59473" stroke="#2D2D2D" stroke-width="1.02361" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg></button>
+              <button id="quantity-btn minus"><i class="fa-solid fa-minus" style="color: #464749;"></i></button>
               <input id="number" type="number" min="1" class="quantity-input" value="1">
-              <button id="quantity-btn plus"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
-                  <path d="M8.84208 4.5V12.6889M4.74763 8.59444L12.9365 8.59444" stroke="#2D2D2D" stroke-width="1.02361" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg></button>
+              <button id="quantity-btn plus"><i class="fa-solid fa-plus" style="color: #464749;"></i></button>
               </div>
           </div>
           
       </div>
       <div class="item">
-        <button class="delete-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-<path d="M3.33333 5.3335V12.0002C3.33333 13.4729 4.52724 14.6668 6 14.6668H10C11.4728 14.6668 12.6667 13.4729 12.6667 12.0002V5.3335M9.33333 7.3335V11.3335M6.66667 7.3335L6.66667 11.3335M10.6667 3.3335L9.72916 1.92723C9.48187 1.5563 9.06556 1.3335 8.61975 1.3335H7.38025C6.93444 1.3335 6.51813 1.5563 6.27084 1.92723L5.33333 3.3335M10.6667 3.3335H5.33333M10.6667 3.3335H14M5.33333 3.3335H2" stroke="#2D2D2D" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-</svg></button>
+        <button class="delete-btn"><img src="assets/images/delete.svg" alt=""></button>
         <div class="item-details">
             <div class="item-name-price">
-            <span class="item-name">A use case where the item name breaks in two or more line</span>
-            <span class="item-price">₦1,400</span>
+            <span class="block text-sm pl-1.5 leading-normal font-bold w-30">A use case where the item name breaks in two or more line</span>
+            <span class="text-lg pl-1.5 mt-1.5 leading-normal font-semibold">₦1,400</span>
             </div>
             <div class="quantity">
-            <button id="quantity-btn minus"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
-                <path d="M4.61482 8.59473L12.8037 8.59473" stroke="#2D2D2D" stroke-width="1.02361" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg></button>
+            <button id="quantity-btn minus"><i class="fa-solid fa-minus" style="color: #464749;"></i></button>
             <input id="number" type="number" min="1" class="quantity-input" value="1">
-            <button id="quantity-btn plus"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
-                <path d="M8.84208 4.5V12.6889M4.74763 8.59444L12.9365 8.59444" stroke="#2D2D2D" stroke-width="1.02361" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg></button>
+            <button id="quantity-btn plus"><i class="fa-solid fa-plus" style="color: #464749;"></i></button>
             </div>
         </div>
         
     </div>
     <hr>
-    <div class="total">
+    <div class="flex items-center justify-between">
       <span>Total</span>
-      <span class="total-amount">₦7,600</span>
+      <span class="total-amount text-right mr-2.5 text-base">₦7,600</span>
   </div>
-  <button class="checkout-btn">Proceed to Checkout:<span>₦7,600</span></button>
+  <button class="checkout-btn text-base">Proceed to Checkout: <span>₦7,600</span></button>
   <button class="clear-btn">Clear Cart</button>
       </div>
       
@@ -213,149 +158,40 @@
   <!-- Cart Full Page Ends -->
   <!-- Cart Empty Page start -->
   <div class="hidden">
-    <div class="cart-container">
-      <div class="head">
-        <button class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="26" viewBox="0 0 38 26" fill="none">
-          <path d="M24.4494 2.10132L35.3481 13M35.3481 13L24.4494 23.8988M35.3481 13L2.65198 13" stroke="#2D2D2D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg></button>
-        <div class="dis">
-        <span>My Cart</span>
-        <div class="icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 38 39" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.04175 0.291748C1.28236 0.291748 0.666748 0.907357 0.666748 1.66675C0.666748 2.42614 1.28236 3.04175 2.04175 3.04175H5.70842C6.97404 3.04175 8.00004 4.06772 8.00008 5.33333H10.7501C10.75 2.54893 8.49282 0.291748 5.70842 0.291748H2.04175Z" fill="white"/>
-            <path opacity="0.4" d="M8 5.33325H30C34.0501 5.33325 37.3333 8.6165 37.3333 12.6666V21.8333C37.3333 25.8833 34.0501 29.1666 30 29.1666H15.3333C11.2832 29.1666 8 25.8833 8 21.8333V5.33325Z" fill="white"/>
-            <circle cx="14.4167" cy="35.5835" r="2.75" fill="white"/>
-            <circle cx="30.9167" cy="35.5835" r="2.75" fill="white"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M29.3642 19.325C29.7372 19.9865 29.5033 20.825 28.8418 21.198C26.614 22.454 24.6951 23.2047 22.6717 23.2086C20.6458 23.2125 18.7232 22.4677 16.4866 21.1954C15.8265 20.8199 15.5959 19.9804 15.9714 19.3204C16.3468 18.6603 17.1863 18.4296 17.8464 18.8051C19.9294 19.9901 21.3504 20.4611 22.6664 20.4586C23.9849 20.456 25.4062 19.978 27.4912 18.8025C28.1527 18.4295 28.9913 18.6635 29.3642 19.325Z" fill="white"/>
-          </svg>
+    <div class="font-sans bg-white p-2.5 rounded-lg shadow max-w-sm shrink-0 mx-auto m-40">
+      <div class="p-2.5 mb-2.5">
+        <div class="dis flex items-center justify-between">
+          <button class="btn text-xs ml-1"><i class="fa-solid fa-x" style="color: #fcfcfd;"></i></button>
+        <span class="whitespace-nowrap text-sm">My Cart</span>
+        <div class="icon mr-1">
+          <img src="assets/images/cart.svg" alt="">
         </div>
         </div>
       </div>
-      <div class="back-cart">
-        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="150" viewBox="0 0 225 234" fill="none">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.63013 0.0366211C3.97885 0.0366211 0.208252 3.80722 0.208252 8.4585C0.208252 13.1098 3.97885 16.8804 8.63013 16.8804H31.0885C38.8406 16.8804 45.1249 23.1647 45.1249 30.9168V42.146C45.1249 42.1584 45.1249 42.1708 45.125 42.1831V30.9167H61.9687C61.9686 13.8621 48.1431 0.0366211 31.0885 0.0366211H8.63013Z" fill="#2D2D2D" fill-opacity="0.4"/>
-          <path opacity="0.4" d="M45.125 30.9165H179.875C204.682 30.9165 224.792 51.0264 224.792 75.8332V131.979C224.792 156.786 204.682 176.896 179.875 176.896H90.0417C65.2349 176.896 45.125 156.786 45.125 131.979V30.9165Z" fill="#2D2D2D" fill-opacity="0.4"/>
-          <circle cx="84.427" cy="216.198" r="16.8438" fill="#2D2D2D" fill-opacity="0.4"/>
-          <circle cx="185.49" cy="216.198" r="16.8438" fill="#2D2D2D" fill-opacity="0.4"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M109.152 78.1025C112.441 74.8135 117.773 74.8135 121.062 78.1025L134.958 91.9978L148.853 78.1025C152.142 74.8135 157.474 74.8135 160.763 78.1025C164.052 81.3914 164.052 86.7238 160.763 90.0128L146.868 103.908L160.763 117.804C164.052 121.093 164.052 126.425 160.763 129.714C157.474 133.003 152.142 133.003 148.853 129.714L134.958 115.819L121.062 129.714C117.773 133.003 112.441 133.003 109.152 129.714C105.863 126.425 105.863 121.092 109.152 117.804L123.047 103.908L109.152 90.0128C105.863 86.7238 105.863 81.3914 109.152 78.1025Z" fill="#2D2D2D" fill-opacity="0.4"/>
-        </svg>
-        <h1>Add items</h1>
-        <span>Your cart is empty, add items from vendors. Your cart will appear here</span>
+      <div class="flex flex-col justify-between items-center">
+        <img src="assets/images/empty-cart.svg" alt="">
+        <h1 class="text-4xl font-bold p-1 leading-normal">Add items</h1>
+        <span class="text-base text-center">Your cart is empty, add items from vendors.</span>
+        <span class="text-base text-center">Your cart will appear here</span>
       </div>
-      <button class="back-btn">Back to shopping</button>
+      <button class="back-btn mb-5">Back to shopping</button>
     </div>
   </div>
   <!-- Cart Empty Page ends -->
-    <!-- Cart Page Start -->
-    <div class="">
-      <div class="cart-container">
-        <h1>My Cart</h1>
-        <p>Total item(s) in Cart: <span class="qty">6</span></p>
-        <div class="item">
-            <button class="delete-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path d="M3.33333 5.3335V12.0002C3.33333 13.4729 4.52724 14.6668 6 14.6668H10C11.4728 14.6668 12.6667 13.4729 12.6667 12.0002V5.3335M9.33333 7.3335V11.3335M6.66667 7.3335L6.66667 11.3335M10.6667 3.3335L9.72916 1.92723C9.48187 1.5563 9.06556 1.3335 8.61975 1.3335H7.38025C6.93444 1.3335 6.51813 1.5563 6.27084 1.92723L5.33333 3.3335M10.6667 3.3335H5.33333M10.6667 3.3335H14M5.33333 3.3335H2" stroke="#2D2D2D" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg></button>
-            <div class="item-details">
-                <div class="item-name-price">
-                <span class="item-name">Hot Big Plantain</span>
-                <span class="item-price">₦1,400</span>
-                </div>
-                <div class="quantity">
-                <button id="quantity-btn minus"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
-                    <path d="M4.61482 8.59473L12.8037 8.59473" stroke="#2D2D2D" stroke-width="1.02361" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg></button>
-                <input id="number" type="number" min="1" class="quantity-input" value="1">
-                <button id="quantity-btn plus"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
-                    <path d="M8.84208 4.5V12.6889M4.74763 8.59444L12.9365 8.59444" stroke="#2D2D2D" stroke-width="1.02361" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg></button>
-                </div>
-            </div>
-            
-        </div>
-        <div class="item">
-            <button class="delete-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-<path d="M3.33333 5.3335V12.0002C3.33333 13.4729 4.52724 14.6668 6 14.6668H10C11.4728 14.6668 12.6667 13.4729 12.6667 12.0002V5.3335M9.33333 7.3335V11.3335M6.66667 7.3335L6.66667 11.3335M10.6667 3.3335L9.72916 1.92723C9.48187 1.5563 9.06556 1.3335 8.61975 1.3335H7.38025C6.93444 1.3335 6.51813 1.5563 6.27084 1.92723L5.33333 3.3335M10.6667 3.3335H5.33333M10.6667 3.3335H14M5.33333 3.3335H2" stroke="#2D2D2D" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-</svg></button>
-            <div class="item-details">
-                <div class="item-name-price">
-                <span class="item-name">A use case where the item name breaks in two or more line</span>
-                <span class="item-price">₦1,400</span>
-                </div>
-                <div class="quantity">
-                <button id="quantity-btn minus"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
-                    <path d="M4.61482 8.59473L12.8037 8.59473" stroke="#2D2D2D" stroke-width="1.02361" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg></button>
-                <input id="number" type="number" min="1" class="quantity-input" value="1">
-                <button id="quantity-btn plus"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
-                    <path d="M8.84208 4.5V12.6889M4.74763 8.59444L12.9365 8.59444" stroke="#2D2D2D" stroke-width="1.02361" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg></button>
-                </div>
-            </div>
-            
-        </div>
-        <div class="item">
-            <button class="delete-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-<path d="M3.33333 5.3335V12.0002C3.33333 13.4729 4.52724 14.6668 6 14.6668H10C11.4728 14.6668 12.6667 13.4729 12.6667 12.0002V5.3335M9.33333 7.3335V11.3335M6.66667 7.3335L6.66667 11.3335M10.6667 3.3335L9.72916 1.92723C9.48187 1.5563 9.06556 1.3335 8.61975 1.3335H7.38025C6.93444 1.3335 6.51813 1.5563 6.27084 1.92723L5.33333 3.3335M10.6667 3.3335H5.33333M10.6667 3.3335H14M5.33333 3.3335H2" stroke="#2D2D2D" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-</svg></button>
-            <div class="item-details">
-                <div class="item-name-price">
-                <span class="item-name">Hot Big Plantain</span>
-                <span class="item-price">₦1,400</span>
-                </div>
-                <div class="quantity">
-                <button id="quantity-btn minus"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
-                    <path d="M4.61482 8.59473L12.8037 8.59473" stroke="#2D2D2D" stroke-width="1.02361" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg></button>
-                <input id="number" type="number" min="1" class="quantity-input" value="1">
-                <button id="quantity-btn plus"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
-                    <path d="M8.84208 4.5V12.6889M4.74763 8.59444L12.9365 8.59444" stroke="#2D2D2D" stroke-width="1.02361" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg></button>
-                </div>
-            </div>
-            
-        </div>
-        <hr>
-        <div class="total">
-            <span>Total</span>
-            <span class="total-amount">₦7,600</span>
-        </div>
-        <button class="checkout-btn">Proceed to Checkout:<span>₦7,600</span></button>
-        <button class="clear-btn">Clear Cart</button>
-    </div>
-    </div>
-    <!-- Cart Page End -->
 
     <!-- Success Cart Page Start -->
-    <div class="cart-container cart-success">
-      <div class="logo">
-        <svg xmlns="http://www.w3.org/2000/svg" width="102" height="103" viewBox="0 0 102 103" fill="none">
-          <g clip-path="url(#clip0_544_6499)">
-            <path d="M51.0735 0.93042C65.0972 0.93042 77.7938 6.61499 86.984 15.8053C96.1743 24.9956 101.859 37.6921 101.859 51.7158C101.859 65.7395 96.1743 78.4361 86.984 87.6263C77.7937 96.8166 65.0971 102.501 51.0735 102.501C37.0497 102.501 24.3532 96.8166 15.1629 87.6263C5.97262 78.436 0.288086 65.7395 0.288086 51.7158C0.288086 37.6921 5.97265 24.9955 15.1629 15.8053C24.3532 6.61496 37.0498 0.93042 51.0735 0.93042ZM85.2797 17.5097C76.5258 8.75585 64.4319 3.34164 51.0735 3.34164C37.715 3.34164 25.6211 8.75588 16.8672 17.5097C8.11341 26.2635 2.6992 38.3575 2.6992 51.7159C2.6992 65.0743 8.11343 77.1683 16.8672 85.9221C25.6211 94.676 37.715 100.09 51.0735 100.09C64.4319 100.09 76.5258 94.6759 85.2797 85.9221C94.0335 77.1683 99.4477 65.0743 99.4477 51.7159C99.4477 38.3575 94.0335 26.2635 85.2797 17.5097Z" fill="#344432"/>
-            <path d="M51.0731 21.021C68.0255 21.021 81.7682 34.7639 81.7682 51.7161C81.7682 68.6686 68.0256 82.4113 51.0731 82.4113C34.1209 82.4113 20.3779 68.6687 20.3779 51.7161C20.3779 34.764 34.1208 21.021 51.0731 21.021ZM79.3569 51.7161C79.3569 36.0954 66.694 23.4323 51.0731 23.4323C35.4524 23.4323 22.7892 36.0955 22.7892 51.7161C22.7892 67.3371 35.4524 80 51.0731 80C66.6941 80 79.3569 67.3371 79.3569 51.7161Z" fill="#344432"/>
-            <path d="M40.3295 85.5572L37.7942 90.994L36.4131 90.3502L36.6934 89.7495C36.3741 89.9038 36.0585 89.9876 35.7505 89.9975C35.4408 90.0067 35.1347 89.941 34.831 89.7993C34.4879 89.6394 34.2243 89.4375 34.0415 89.1965C33.8573 88.9547 33.7394 88.6547 33.6891 88.2945C33.374 88.4714 33.0571 88.567 32.7337 88.5783C32.4125 88.5906 32.0913 88.5217 31.7703 88.372C31.224 88.1173 30.8651 87.7549 30.693 87.2861C30.5234 86.8162 30.5659 86.306 30.8247 85.7513L32.5967 81.9516L34.0324 82.6209L32.3996 86.1218C32.2771 86.3849 32.2534 86.6232 32.3274 86.8343C32.4012 87.0454 32.5641 87.2085 32.8185 87.3273C33.1018 87.4595 33.3703 87.4721 33.6226 87.3634C33.8759 87.2573 34.0773 87.0437 34.2262 86.7241L35.7631 83.4282L37.1835 84.0903L35.5555 87.5812C35.4314 87.8475 35.405 88.0866 35.4748 88.2979C35.5448 88.5093 35.7034 88.6725 35.9543 88.7896C36.2376 88.9218 36.5049 88.932 36.7575 88.823C37.0095 88.7145 37.2112 88.4964 37.3615 88.1738L38.8938 84.8878L40.3295 85.5572ZM33.1438 79.3239L32.3272 80.3325C32.2924 80.2948 32.3673 80.3697 32.3272 80.3325C32.287 80.2951 32.119 80.1349 32.0501 80.0792C31.8043 79.8799 31.5724 79.7894 31.3559 79.8053C31.1392 79.8215 30.9364 79.9459 30.7493 80.1769L28.5314 86.4056L27.1598 85.295L28.9006 81.1373L25.2204 83.7244L23.9091 82.6624L30.2784 78.7146C30.755 78.4195 31.161 78.283 31.497 78.308C31.8328 78.3303 32.2154 78.5167 32.6441 78.8637C32.7216 78.9265 32.8013 78.996 32.8859 79.074C32.9691 79.151 33.0555 79.2356 33.1438 79.3239ZM20.4831 74.2392C21.23 73.6937 22.0216 73.4942 22.8563 73.6423C23.6907 73.7898 24.4436 74.2648 25.114 75.0642C25.8876 75.9862 26.2024 76.9442 26.0553 77.9383C25.9107 78.9321 25.3184 79.8643 24.2812 80.7348C23.2219 81.6233 22.192 82.0426 21.1909 81.9952C20.1895 81.9475 19.2789 81.4335 18.458 80.455C17.7907 79.6602 17.4574 78.8705 17.4595 78.0842C17.4598 77.2996 17.795 76.5855 18.4644 75.9477L19.525 77.2118C19.2178 77.5605 19.0705 77.9297 19.0821 78.3187C19.0934 78.7073 19.2663 79.1009 19.5991 79.4976C20.0727 80.0617 20.6139 80.3379 21.2232 80.3255C21.8326 80.3134 22.4871 80.0148 23.1853 79.4289C23.8622 78.861 24.2621 78.2773 24.387 77.6758C24.5106 77.0729 24.348 76.5037 23.8948 75.9641C23.5693 75.5761 23.202 75.3408 22.7962 75.2586C22.3891 75.1773 21.9704 75.2559 21.5361 75.4945L20.4831 74.2392ZM22.1043 71.876L14.9959 75.816L14.2226 74.4207L16.6639 73.0677C16.3201 73.0103 16.0153 72.8843 15.749 72.6875C15.4835 72.492 15.26 72.2327 15.0801 71.9083C14.9086 71.5984 14.8069 71.2909 14.7753 70.9812C14.7428 70.674 14.7829 70.3889 14.893 70.1255C14.9657 69.9454 15.0761 69.7871 15.2237 69.6495C15.3688 69.5108 15.6302 69.3379 16.0075 69.1287L19.5065 67.1893L20.2798 68.5846L17.5336 70.1067C16.8831 70.4675 16.5091 70.7523 16.4084 70.9632C16.3085 71.1756 16.344 71.4338 16.5158 71.7432C16.6992 72.0744 16.9431 72.2817 17.2479 72.3649C17.5525 72.4481 17.8764 72.3954 18.2173 72.2063L21.3307 70.4804L22.1043 71.876ZM15.6224 65.9849C16.1884 65.801 16.5877 65.5425 16.8201 65.2094C17.0524 64.8766 17.099 64.4948 16.9593 64.0651C16.8214 63.6404 16.5608 63.3626 16.1768 63.2301C15.7931 63.0974 15.3184 63.1229 14.7522 63.3068C14.1897 63.4897 13.7917 63.7457 13.5604 64.0761C13.3291 64.4068 13.2839 64.7859 13.4231 65.214C13.5629 65.644 13.8227 65.9256 14.2048 66.0592C14.5866 66.1925 15.0597 66.1677 15.6224 65.9849ZM16.1251 67.5326C15.1776 67.8403 14.3486 67.8244 13.6388 67.4868C12.929 67.1489 12.4293 66.5309 12.1366 65.6303C11.8455 64.7344 11.8867 63.9407 12.2615 63.2487C12.6369 62.5564 13.2982 62.0561 14.2457 61.7484C15.197 61.4393 16.0276 61.4546 16.7382 61.7941C17.4485 62.1337 17.9483 62.7516 18.2393 63.6472C18.532 64.5481 18.4911 65.3419 18.1152 66.0323C17.7393 66.7229 17.0764 67.2235 16.1251 67.5326ZM13.1759 56.5296C12.5822 56.6344 12.1476 56.8277 11.8741 57.1074C11.6 57.3872 11.5014 57.7391 11.5771 58.1678C11.6509 58.587 11.8633 58.8805 12.2136 59.0442C12.5636 59.2079 13.0375 59.2375 13.6347 59.1323C14.1929 59.0337 14.6049 58.8425 14.8688 58.5587C15.1321 58.2752 15.2271 57.9238 15.1528 57.5027C15.0823 57.1039 14.8717 56.8196 14.5198 56.6465C14.1679 56.4733 13.7193 56.434 13.1759 56.5296ZM19.1941 59.7373L10.9177 61.1967L10.6525 59.6923L11.4519 59.5512C11.0631 59.3848 10.7655 59.1735 10.5566 58.9214C10.3477 58.6694 10.2095 58.3514 10.1425 57.9712C10.014 57.244 10.1971 56.6018 10.6907 56.0482C11.1859 55.4941 11.901 55.1346 12.8337 54.9701C13.7799 54.8032 14.5877 54.8944 15.2557 55.2431C15.9232 55.5921 16.3211 56.1244 16.4471 56.8387C16.5136 57.2149 16.4932 57.5649 16.3855 57.8878C16.278 58.2109 16.0896 58.4984 15.8198 58.747L18.923 58.1998L19.1941 59.7373ZM15.7872 53.7124L7.66504 53.4286L7.7232 51.757L14.3453 51.9883L14.4837 48.0243L15.984 48.0766L15.7872 53.7124ZM9.49949 46.6791L8.05223 46.4756L8.27571 44.8848L9.72297 45.0881L9.49949 46.6791ZM16.1022 47.607L10.1618 46.772L10.3853 45.1812L16.3257 46.0162L16.1022 47.607ZM16.5982 44.779L11.8506 43.6831L11.6584 44.5162L10.5609 44.2631L10.7531 43.4297L10.2101 43.3043C9.66481 43.1785 9.29754 42.9448 9.10529 42.6047C8.9152 42.2652 8.88908 41.791 9.02909 41.1855C9.0544 41.0753 9.08322 40.9585 9.11795 40.8349C9.15134 40.7132 9.19307 40.5837 9.23804 40.4472L10.4804 40.7342L10.3859 41.1432C10.3328 41.3745 10.3283 41.5358 10.3719 41.6233C10.4155 41.7105 10.5246 41.7743 10.6953 41.8139L11.1045 41.9084L11.3304 40.9302L12.4279 41.1836L12.2044 42.1508L16.952 43.2469L16.5982 44.779ZM16.8516 37.8111L17.4512 36.3267C17.9776 36.7139 18.3147 37.2015 18.4622 37.7915C18.6117 38.382 18.5533 39.0045 18.2886 39.6593C17.9633 40.4644 17.4353 40.9924 16.7051 41.2458C15.9738 41.4967 15.1469 41.437 14.2214 41.0632C13.3116 40.6954 12.6878 40.1731 12.349 39.498C12.0111 38.8214 12.0052 38.0815 12.3304 37.2764C12.6756 36.4226 13.1999 35.8685 13.9045 35.6129C14.6084 35.3587 15.4374 35.4236 16.3927 35.8095C16.3392 35.7858 16.4991 35.8526 16.3927 35.8095C16.4442 35.8324 16.7315 35.9565 16.7756 35.9826L15.275 39.697C15.7201 39.8524 16.0912 39.8785 16.3908 39.7762C16.6903 39.6736 16.9124 39.4404 17.0583 39.0791C17.162 38.8222 17.1962 38.592 17.1623 38.3895C17.1273 38.1846 17.0239 37.9926 16.8516 37.8111ZM14.2971 39.3018L15.1819 37.1122C14.8006 36.9743 14.4759 36.9589 14.2037 37.0645C13.9328 37.1722 13.7271 37.3997 13.5865 37.7473C13.4562 38.0702 13.4524 38.3655 13.5741 38.6321C13.6969 38.8971 13.9379 39.1203 14.2971 39.3018Z" fill="#344432"/>
-            <path d="M24.5914 28.1078L20.7354 23.5124L21.9026 22.5328L22.3288 23.0406C22.3237 22.686 22.3813 22.3648 22.5022 22.0813C22.625 21.7967 22.8137 21.5471 23.0706 21.3316C23.3606 21.0882 23.6549 20.9348 23.9503 20.8709C24.2475 20.8063 24.5693 20.8262 24.9172 20.9329C24.8897 20.5723 24.9371 20.2449 25.0634 19.9471C25.1881 19.6504 25.3865 19.3884 25.6576 19.1609C26.1194 18.7734 26.5995 18.6014 27.0971 18.6436C27.5947 18.6886 28.039 18.9428 28.4323 19.4116L31.1273 22.6233L29.9141 23.6416L27.431 20.6825C27.2446 20.4601 27.0387 20.3378 26.8157 20.3155C26.5933 20.2934 26.3766 20.372 26.1617 20.5524C25.9221 20.7533 25.7968 20.9913 25.789 21.266C25.7783 21.5403 25.8868 21.8131 26.1132 22.0832L28.4509 24.8692L27.2506 25.8765L24.7747 22.9259C24.586 22.7008 24.3803 22.5756 24.1592 22.5498C23.9382 22.5237 23.723 22.5985 23.5109 22.7765C23.2715 22.9776 23.1492 23.2154 23.1412 23.49C23.1331 23.7647 23.2454 24.0393 23.4742 24.3121L25.8049 27.0894L24.5914 28.1078ZM33.2569 24.1064L32.6276 22.9712C32.5778 22.9943 32.6758 22.9531 32.6276 22.9712C32.6769 22.948 32.8888 22.8522 32.9666 22.8093C33.2431 22.6559 33.4141 22.4749 33.4804 22.2681C33.5466 22.0613 33.5073 21.8268 33.363 21.5665L28.4189 17.177L29.9622 16.3213L33.1651 19.4924L32.1451 15.1115L33.6212 14.2932L34.8953 21.6776C34.9906 22.2299 34.9648 22.6577 34.8159 22.9598C34.6694 23.2628 34.3533 23.5479 33.8711 23.8153C33.7835 23.8637 33.6893 23.9117 33.5851 23.9607C33.4828 24.0089 33.3719 24.0576 33.2569 24.1064ZM42.8904 14.5299C43.1163 15.4268 43.0048 16.2354 42.5549 16.9541C42.1052 17.6727 41.3828 18.1924 40.3906 18.5147C39.246 18.8868 38.2397 18.8195 37.3733 18.3109C36.506 17.8047 35.8635 16.9061 35.4451 15.618C35.0178 14.3035 35.0148 13.1915 35.4341 12.2808C35.853 11.3702 36.671 10.7186 37.8857 10.3239C38.8725 10.0032 39.7298 9.98999 40.4579 10.2862C41.1852 10.5807 41.7218 11.1588 42.0624 12.0183L40.4932 12.5283C40.2848 12.1128 39.9977 11.8379 39.6329 11.703C39.268 11.5678 38.8386 11.5805 38.3461 11.7407C37.6455 11.9682 37.1867 12.367 36.9699 12.9365C36.7529 13.506 36.7844 14.2246 37.066 15.0916C37.3391 15.9317 37.7306 16.5214 38.2416 16.8623C38.754 17.2029 39.3429 17.2651 40.0128 17.0475C40.4948 16.8908 40.8505 16.6385 41.0788 16.293C41.3063 15.9457 41.3906 15.5284 41.3319 15.0364L42.8904 14.5299ZM44.4766 17.0548L43.4862 8.98811L45.0697 8.7937L45.4098 11.5641C45.5916 11.2668 45.8226 11.0315 46.1048 10.8584C46.3853 10.6852 46.7098 10.5751 47.0779 10.5299C47.4292 10.4868 47.7526 10.5078 48.0518 10.5945C48.3487 10.6793 48.5981 10.8236 48.8008 11.0242C48.9408 11.1591 49.0461 11.3207 49.1186 11.5092C49.1929 11.6955 49.2551 12.0027 49.3076 12.4308L49.7952 16.4019L48.212 16.596L47.8291 13.4796C47.7383 12.7413 47.6145 12.2879 47.4567 12.1156C47.297 11.9435 47.0445 11.8797 46.6931 11.9228C46.3172 11.9691 46.0339 12.1177 45.8425 12.3687C45.6513 12.6199 45.5789 12.94 45.6263 13.3269L46.0601 16.8602L44.4766 17.0548ZM52.3443 13.6067C52.3028 14.2006 52.3927 14.6675 52.6146 15.0076C52.8362 15.3479 53.1725 15.534 53.6235 15.5655C54.0688 15.5967 54.424 15.4591 54.6906 15.153C54.9574 14.8469 55.1117 14.3969 55.1532 13.8029C55.1946 13.2133 55.1063 12.7483 54.8863 12.4101C54.6663 12.0719 54.3316 11.8877 53.8828 11.8565C53.4321 11.825 53.0731 11.9604 52.8063 12.2647C52.5397 12.5687 52.3855 13.0167 52.3443 13.6067ZM50.7209 13.4933C50.7904 12.4995 51.1156 11.7367 51.6948 11.2049C52.2737 10.6736 53.0338 10.4415 53.9789 10.5078C54.9186 10.5732 55.6389 10.9087 56.1402 11.5159C56.6416 12.1231 56.8575 12.9236 56.7878 13.9174C56.7181 14.9153 56.3928 15.6797 55.812 16.2112C55.231 16.7427 54.4709 16.9745 53.5311 16.9088C52.5863 16.8429 51.8658 16.5074 51.3666 15.9005C50.8668 15.2933 50.6512 14.4909 50.7209 13.4933ZM62.0852 15.2198C62.2411 14.6376 62.2497 14.1621 62.1118 13.7957C61.9742 13.4292 61.6966 13.1909 61.2763 13.0786C60.8652 12.9685 60.5095 13.0366 60.2128 13.2849C59.9166 13.5332 59.6896 13.95 59.5326 14.5359C59.3859 15.0833 59.3851 15.5375 59.5307 15.8964C59.6764 16.2553 59.9548 16.4896 60.3676 16.6003C60.7591 16.7053 61.1056 16.6342 61.4112 16.3886C61.7168 16.1428 61.9422 15.7529 62.0852 15.2198ZM56.6346 19.3187L58.8099 11.2009L60.2852 11.5961L60.0752 12.3802C60.3905 12.0983 60.7079 11.9182 61.0246 11.8352C61.3412 11.7523 61.6877 11.7614 62.0607 11.8613C62.7739 12.0525 63.2788 12.4898 63.572 13.171C63.8647 13.8538 63.8884 14.6538 63.6431 15.569C63.3946 16.4969 62.9705 17.1905 62.3722 17.6482C61.7739 18.1062 61.1234 18.2417 60.4228 18.0543C60.0536 17.9552 59.7451 17.7885 59.4979 17.5548C59.2504 17.3208 59.0695 17.0287 58.9583 16.6789L58.1427 19.7228L56.6346 19.3187ZM63.5769 18.8413L66.8825 11.4168L68.4106 12.0969L65.7153 18.1501L69.339 19.7635L68.7283 21.1348L63.5769 18.8413ZM72.5208 15.8345L73.2954 14.5948L74.6579 15.4462L73.8832 16.6859L72.5208 15.8345ZM68.9876 21.4889L72.1664 16.4015L73.5289 17.2527L70.35 22.34L68.9876 21.4889ZM71.4368 23.0597L74.4366 19.2201L73.7626 18.6937L74.4559 17.806L75.1299 18.3324L75.4732 17.8932C75.8176 17.4525 76.1846 17.2182 76.5739 17.1878C76.9625 17.1587 77.4027 17.3356 77.8925 17.7182C77.9816 17.788 78.0753 17.8636 78.1728 17.9468C78.2689 18.029 78.3685 18.1213 78.4733 18.2199L77.6884 19.2247L77.3572 18.966C77.1703 18.82 77.026 18.7479 76.9283 18.7506C76.8305 18.753 76.7269 18.8249 76.6192 18.963L76.3604 19.2939L77.1515 19.9119L76.4579 20.7993L75.676 20.1884L72.6761 24.028L71.4368 23.0597ZM77.6714 26.0442L78.8422 27.136C78.2921 27.4882 77.7161 27.6285 77.1124 27.555C76.5074 27.4826 75.9476 27.205 75.4309 26.7235C74.796 26.1312 74.4923 25.4489 74.5173 24.6764C74.5451 23.9039 74.897 23.1532 75.5779 22.4232C76.2471 21.7054 76.9584 21.3101 77.7099 21.2361C78.463 21.1628 79.1556 21.4227 79.7907 22.015C80.4644 22.6429 80.7937 23.3312 80.7797 24.0805C80.7647 24.8285 80.4071 25.5795 79.7046 26.3331C79.6262 26.4168 79.7458 26.2916 79.7046 26.3331C79.6647 26.373 79.4458 26.5964 79.4054 26.6285L76.4756 23.8963C76.1711 24.2563 76.0136 24.5934 76.0018 24.9098C75.9902 25.2259 76.1283 25.5167 76.4137 25.783C76.6162 25.9718 76.8187 26.0857 77.0201 26.1266C77.2239 26.1675 77.4401 26.1401 77.6714 26.0442ZM77.1948 23.1249L78.9224 24.7356C79.1873 24.4292 79.3182 24.1317 79.3174 23.8398C79.3139 23.5482 79.1752 23.2743 78.9011 23.0188C78.6464 22.7811 78.3718 22.6723 78.0793 22.6903C77.788 22.7097 77.4934 22.8546 77.1948 23.1249Z" fill="#344432"/>
-            <path d="M83.2026 37.1312L88.8745 35.178L89.3708 36.6188L88.7439 36.8345C89.0767 36.9567 89.3562 37.1258 89.5773 37.3404C89.7991 37.5569 89.9645 37.8224 90.0735 38.1395C90.1968 38.4974 90.2345 38.827 90.1882 39.1261C90.1424 39.4266 90.0081 39.7198 89.7841 40.0063C90.1306 40.11 90.4192 40.2715 90.6521 40.4963C90.8842 40.7188 91.0576 40.9977 91.1729 41.3327C91.3692 41.9024 91.3576 42.4124 91.14 42.862C90.9201 43.3104 90.5234 43.634 89.9445 43.8333L85.9803 45.1984L85.4646 43.7005L89.1171 42.4431C89.3915 42.3486 89.5794 42.1999 89.6799 42.0002C89.7803 41.8004 89.7846 41.5696 89.6933 41.3044C89.5915 41.0087 89.4144 40.8068 89.1607 40.7007C88.9084 40.5925 88.6147 40.596 88.2816 40.7107L84.8429 41.8946L84.3327 40.4132L87.9746 39.1592C88.2522 39.0634 88.4429 38.9164 88.5463 38.7193C88.6497 38.5224 88.6569 38.2949 88.5667 38.0329C88.465 37.7373 88.2867 37.5377 88.0331 37.4319C87.7797 37.3258 87.483 37.3326 87.1464 37.4484L83.7182 38.6288L83.2026 37.1312ZM83.4657 46.7666L84.7584 46.6535C84.7554 46.7046 84.7573 46.5985 84.7584 46.6535C84.7595 46.7084 84.7608 46.9405 84.7686 47.0285C84.7961 47.3441 84.8919 47.5738 85.054 47.7184C85.2158 47.863 85.4461 47.9225 85.7425 47.8964L91.7636 45.165L91.9174 46.9233L87.7178 48.5593L92.1349 49.4093L92.282 51.0906L85.0179 49.251C84.4746 49.1134 84.0941 48.916 83.8787 48.657C83.6617 48.3999 83.5297 47.9954 83.4815 47.4456C83.4729 47.3463 83.4673 47.2407 83.4651 47.1257C83.4627 47.0124 83.4633 46.8915 83.4657 46.7666ZM88.3629 59.4682C87.4545 59.294 86.7687 58.8511 86.3077 58.1397C85.8467 57.4286 85.6806 56.5543 85.8079 55.5188C85.9544 54.3241 86.4404 53.4406 87.2679 52.8703C88.0934 52.2982 89.1788 52.0954 90.5232 52.2605C91.8953 52.429 92.9045 52.8965 93.5523 53.6612C94.2007 54.4256 94.4457 55.4426 94.2898 56.71C94.1635 57.7401 93.8132 58.5226 93.237 59.0573C92.663 59.5921 91.912 59.8339 90.989 59.7792L91.1901 58.1416C91.6549 58.1284 92.0254 57.9844 92.3019 57.7108C92.5784 57.4375 92.7481 57.0425 92.8113 56.5285C92.901 55.7977 92.7338 55.2134 92.3094 54.7762C91.8848 54.3386 91.2203 54.0634 90.3153 53.9525C89.4386 53.8448 88.7388 53.9506 88.2135 54.2694C87.6887 54.5901 87.3834 55.0974 87.2975 55.7966C87.2355 56.2993 87.3142 56.7283 87.5307 57.0813C87.749 57.4345 88.0921 57.6874 88.5627 57.8419L88.3629 59.4682ZM85.3758 59.8821L93.1054 62.3934L92.6123 63.9107L89.9577 63.048C90.1505 63.3385 90.266 63.6474 90.3037 63.9761C90.342 64.3038 90.3048 64.6442 90.1901 64.9969C90.0805 65.3337 89.9249 65.6178 89.72 65.8523C89.5175 66.0852 89.2816 66.2506 89.014 66.3494C88.8328 66.4194 88.6416 66.4466 88.4402 66.4326C88.2399 66.421 87.9351 66.3478 87.525 66.2145L83.7201 64.978L84.2131 63.4608L87.1992 64.4312C87.9068 64.6611 88.3702 64.7403 88.5931 64.67C88.8166 64.5981 88.9812 64.3962 89.0905 64.0596C89.2076 63.6993 89.1925 63.3797 89.0458 63.1002C88.8988 62.8208 88.6392 62.6196 88.2687 62.499L84.8831 61.3991L85.3758 59.8821ZM85.3685 68.3424C84.8378 68.0721 84.3728 67.9727 83.9732 68.0438C83.5734 68.1149 83.2707 68.3518 83.0656 68.7544C82.8628 69.1523 82.8507 69.5328 83.0284 69.8982C83.2058 70.2633 83.5596 70.581 84.0901 70.8513C84.617 71.1195 85.0796 71.2202 85.4768 71.1499C85.8739 71.0797 86.1741 70.8435 86.3785 70.4423C86.5837 70.0398 86.599 69.6566 86.4232 69.2921C86.2476 68.9278 85.8955 68.6109 85.3685 68.3424ZM86.1071 66.8925C86.9948 67.3445 87.57 67.942 87.833 68.683C88.0961 69.4237 88.0126 70.2137 87.5824 71.0579C87.1548 71.8971 86.5646 72.4292 85.8098 72.6535C85.0551 72.8778 84.2336 72.7636 83.3461 72.3113C82.4549 71.8573 81.8784 71.259 81.6161 70.5167C81.3536 69.7743 81.4374 68.9838 81.8649 68.1448C82.2949 67.3006 82.8852 66.7686 83.6391 66.5462C84.3933 66.3235 85.2161 66.4385 86.1071 66.8925ZM79.9562 76.653C80.4314 77.0241 80.8657 77.2177 81.257 77.2338C81.6479 77.2505 81.9756 77.0881 82.2435 76.7451C82.5055 76.4096 82.5814 76.0555 82.4689 75.6856C82.3563 75.3156 82.0612 74.944 81.5833 74.5706C81.1366 74.2216 80.719 74.0434 80.3315 74.0375C79.9443 74.0313 79.6199 74.1958 79.3568 74.5326C79.1075 74.852 79.0372 75.1985 79.1438 75.576C79.2507 75.9532 79.5213 76.3132 79.9562 76.653ZM78.3132 70.0341L84.9356 75.2085L83.9953 76.412L83.3556 75.9123C83.4921 76.3127 83.5338 76.6754 83.4861 76.999C83.439 77.3229 83.2952 77.6382 83.0575 77.9428C82.603 78.5246 82.0028 78.8184 81.2613 78.8219C80.5184 78.8246 79.7725 78.5338 79.0262 77.9506C78.2693 77.3593 77.7962 76.698 77.6088 75.9683C77.4211 75.2386 77.5504 74.5868 77.9968 74.0154C78.2321 73.7141 78.506 73.4952 78.8178 73.3589C79.1301 73.2227 79.4696 73.1702 79.835 73.2044L77.3516 71.2644L78.3132 70.0341ZM76.0078 76.5714L81.3399 82.7051L80.0776 83.8023L75.7302 78.8017L72.7369 81.4041L71.7522 80.271L76.0078 76.5714ZM75.0385 86.0819L75.8344 87.3075L74.487 88.1826L73.6911 86.957L75.0385 86.0819ZM71.407 80.4899L74.6741 85.521L73.3268 86.3961L70.0596 81.365L71.407 80.4899ZM68.9516 81.9367L71.3879 86.1564L72.1283 85.7286L72.6916 86.7041L71.9511 87.1317L72.2298 87.6147C72.5096 88.0991 72.5893 88.5273 72.4716 88.8996C72.3531 89.2704 72.0238 89.6126 71.4859 89.9234C71.3879 89.9799 71.2828 90.0383 71.169 90.0976C71.0569 90.1557 70.9336 90.2139 70.803 90.2739L70.1657 89.1697L70.5295 88.9597C70.7349 88.8409 70.8558 88.7343 70.89 88.6428C70.9242 88.5512 70.8965 88.4279 70.8087 88.2763L70.5989 87.9125L69.7295 88.4144L69.1665 87.4389L70.0259 86.9427L67.5897 82.7231L68.9516 81.9367ZM63.644 86.4771L62.1596 87.077C62.0729 86.4295 62.1892 85.8484 62.5112 85.3323C62.8322 84.8145 63.3203 84.4243 63.9752 84.1596C64.7803 83.8344 65.5272 83.8473 66.2165 84.1968C66.905 84.5485 67.4365 85.1847 67.8105 86.1104C68.178 87.02 68.2356 87.8318 67.9852 88.5442C67.7335 89.2575 67.2052 89.7758 66.4001 90.1008C65.546 90.446 64.7835 90.4535 64.1101 90.1242C63.4383 89.7944 62.9089 89.153 62.5231 88.198C62.48 88.0913 62.5433 88.2526 62.5231 88.198C62.504 88.1449 62.3936 87.852 62.3814 87.8022L66.0959 86.3013C65.8985 85.8729 65.6594 85.5881 65.3777 85.4437C65.0958 85.2994 64.7741 85.3018 64.4125 85.4478C64.1556 85.5514 63.9666 85.6869 63.8443 85.8519C63.721 86.0197 63.6548 86.2273 63.644 86.4771ZM66.4909 87.2793L64.3013 88.164C64.4669 88.5337 64.6815 88.7782 64.9461 88.9007C65.2122 89.0208 65.5188 89.0109 65.8662 88.8703C66.1893 88.7397 66.4042 88.5372 66.5113 88.2645C66.6166 87.9923 66.6099 87.664 66.4909 87.2793Z" fill="#344432"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M69.1091 39.9046C68.8298 39.9323 68.5226 39.9323 68.2431 39.9603C67.4332 39.2341 66.4001 38.7594 65.3109 38.8155C63.4396 38.8992 61.6243 40.491 61.1496 42.9208C60.1441 42.0549 58.8595 41.7757 57.8541 42.1946C56.4018 42.8091 55.5081 44.9036 56.4018 46.9145C54.5307 45.1271 51.8774 44.5684 49.6151 45.4343C46.3757 46.6632 45.6495 49.9027 45.5377 51.3271C45.398 52.8352 45.7052 55.1532 47.5205 56.8848C49.6711 58.9516 52.5476 58.7561 53.8882 58.5327C55.2288 58.2812 56.4855 57.6667 57.5469 56.8011C57.4071 57.611 57.5189 58.5604 58.1333 59.2028C59.0827 60.1802 61.1215 60.2643 62.7414 58.8399C62.3504 60.0408 62.5179 61.3534 63.2721 62.1633C64.417 63.3642 66.819 63.42 68.4946 61.7444C69.0253 61.4371 69.5838 61.1299 70.1145 60.8227C68.6621 63.6434 66.6233 66.1012 64.082 68.0003C62.3224 69.3129 60.3954 70.3461 58.4125 71.0165C52.9385 72.8319 47.0178 71.9382 41.8233 69.3967C38.5556 67.4139 35.9026 64.5651 34.1988 61.1579C32.2997 57.3875 31.6853 53.1424 32.216 49.1208C32.8864 44.3172 35.7349 36.5812 43.7504 33.0063C47.3531 31.4144 51.7657 30.9674 56.5972 32.0569C61.5405 33.174 65.8974 35.9947 69.1091 39.9046Z" fill="#344432"/>
-          </g>
-          <defs>
-            <clipPath id="clip0_544_6499">
-              <rect width="101.571" height="101.571" fill="white" transform="translate(0.287109 0.93042)"/>
-            </clipPath>
-          </defs>
-        </svg>
+    <div class="p-2.5 rounded-lg shadow max-w-sm shrink-0 mx-auto m-40 cart-success font-sans flex flex-col justify-items-center items-center">
+      <div class="my-4">
+        <img src="assets/images/success-logo.svg" alt="">
       </div>
-      <div class="success">
-        <svg xmlns="http://www.w3.org/2000/svg" width="146" height="146" viewBox="0 0 146 146" fill="none">
-          <path d="M103.333 20.8356C94.4311 15.686 84.0958 12.7388 73.072 12.7388C39.6465 12.7388 12.5498 39.8355 12.5498 73.261C12.5498 106.687 39.6465 133.783 73.072 133.783C106.498 133.783 133.594 106.687 133.594 73.261C133.594 65.8088 132.247 58.6711 129.784 52.0782M42.8109 61.1566L64.1536 78.2307C69.1607 82.2364 76.4228 81.6423 80.7124 76.8762L127.542 24.8432" stroke="white" stroke-width="9.07834" stroke-linecap="round"/>
-        </svg>
+      <div class="mb-2.5">
+        <img src="assets/images/check-mark.svg" alt="">
       </div>
-      <h2>Success!</h2>
-      <p>Congratulations! your payment has been successfully processed. Thank you for choosing our service</p>
-      <div class="buttons">
+      <h2 class="text-4xl font-bold mb-3">Success!</h2>
+      <p class="text-center text-sm my-4">Congratulations! your payment has been successfully processed. Thank you for choosing our service</p>
+      <div class="buttons mb-3">
         <button class="home">Go Home</button>
         <button class="order-tracking">Order Tracking</button>
       </div>
     </div>
     <!-- Success Cart page Ends -->
-    <span>Pending<br>
-      <span>23Feb 23-05:53PM</span></span>

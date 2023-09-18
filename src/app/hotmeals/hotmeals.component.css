@@ -181,14 +181,14 @@
 }
 
 .left h1 {
-    font-size: 36px;
+    font-size: 44px;
     max-width: 50%;
 }
 
 .left p {
     margin: 10px 0;
     max-width: 50%;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .order-button {
