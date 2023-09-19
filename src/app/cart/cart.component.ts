@@ -18,6 +18,8 @@ export class CartComponent {
   isCartOpen: boolean = true;
   isCheckoutOpen: boolean = false;
   isPaymentSuccessful: boolean = false;
+  isDeliveryAddressOpen: boolean = false;
+  isPayment: boolean = false;
   
 
   getTotalItemsInCart(): number {
@@ -104,9 +106,27 @@ export class CartComponent {
 
   completePayment() {
     this.isPaymentSuccessful = true;
+    this.isPayment = false;
+  }
+
+  deliveryAddress(){
+    this.isDeliveryAddressOpen = true;
     this.isCheckoutOpen = false;
   }
   
+  closeDeliveryAddress() {
+    this.isDeliveryAddressOpen = false;
+  }
+
+  openPayment() {
+    this.isPayment = true;
+    this.isDeliveryAddressOpen = false;
+  }
+
+  closeIsPayement() {
+    this.isPayment = false;
+    this.isDeliveryAddressOpen = true;
+  }
   
   
   
