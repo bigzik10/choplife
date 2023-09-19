@@ -1,70 +1,81 @@
-<div class="hidden">
-  <div class="font-sans bg-white p-2.5 rounded-lg shadow max-w-sm shrink-0 mx-auto m-40">
+
+<div class="">
+    <div *ngIf="isCartOpen && !isCheckoutOpen && items.length > 0; else emptyCart" class="font-sans bg-white p-2.5 rounded-lg shadow max-w-sm shrink-0 mx-auto m-40">
+      <div class="p-2.5 mb-2.5">
+        <div class="dis flex items-center justify-between">
+          <button class="btn pt-1 pb-0 px-1.5 ml-1" (click)="closeCart()"><i class="fa-solid fa-x" style="color: #fcfcfd;"></i></button>
+        <span class="whitespace-nowrap text-lg">My Cart</span>
+        <div class="icon mr-1"><img src="assets/images/cart.svg" alt=""></div>
+        </div>
+      </div>
+      <p class="flex items-center justify-between my-3">
+        <span class="text-base">Total item(s) in Cart:</span> <span class="text-right mr-2.5 text-base font-semibold">{{ getTotalItemsInCart() }}</span></p>
+      <hr>
+        <div *ngFor="let item of items"  class="item">
+            <button class="delete-btn" (click)="removeItem(item)"><img src="assets/images/delete.svg" alt=""></button>
+            <div class="item-details">
+                <div class="item-name-price">
+                <span class="block text-sm pl-1.5 leading-normal font-bold w-30">{{ item.name }}</span>
+                <span class="text-lg pl-1.5 mt-1.5 leading-normal font-semibold">₦{{ item.price }}</span>
+                </div>
+                <div class="quantity">
+                <button (click)="decreaseQuantity(item)"><i class="fa-solid fa-minus" style="color: #464749;"></i></button>
+                <input  type="number" min="1" class="quantity-input" [(ngModel)]="item.quantity">
+                <button (click)="increaseQuantity(item)"><i class="fa-solid fa-plus" style="color: #464749;"></i></button>
+                </div>
+            </div>
+            
+        </div>
+    <hr>
+    <div class="flex items-center justify-between">
+      <span>Total</span>
+      <span class="total-amount text-right mr-2.5 text-base">₦{{ calculateTotal() }}</span>
+  </div>
+  <button class="checkout-btn text-base" (click)="openCheckout()">Proceed to Checkout: <span>₦{{ calculateTotal() }}</span></button>
+  <button class="clear-btn" (click)="clearCart()">Clear Cart</button>
+      </div>
+      
+    </div>
+
+  <!-- Cart Full Page Ends -->
+  <!-- Cart Checkout -->
+<div class="">
+  <div *ngIf="isCheckoutOpen && !isPaymentSuccessful" class="font-sans bg-white p-2.5 rounded-lg shadow max-w-sm shrink-0 mx-auto m-40">
     <div class="p-2.5 mb-2.5">
       <div class="dis dis-green flex items-center justify-between">
-        <button class="btn pt-1 pb-0 px-1.5 ml-1"><i class="fa-solid fa-arrow-left" style="color: #f2eded;"></i></button>
+        <button class="btn pt-1 pb-0 px-1.5 ml-1" (click)="backToCart()"><i class="fa-solid fa-arrow-left" style="color: #f2eded;"></i></button>
       <span class="whitespace-nowrap text-lg">My Cart</span>
       <div class="icon mr-1"><img src="assets/images/cart.svg" alt=""></div>
       </div>
     </div>
     <div class="my-3">
-      <p class="flex items-center justify-between"><span>Order From:</span> <span class="text-base font-semibold">Vendor Name </span></p>
-      <p class="flex items-center justify-between"><span>Esitimated Delivery Time:</span> <span class="text-base font-semibold">24-45 mins</span></p>
+      <p class="flex items-center justify-between text-sm"><span>Order From:</span> <span class="text-base font-semibold">Vendor Name </span></p>
+      <p class="flex items-center justify-between text-sm"><span>Esitimated Delivery Time:</span> <span class="text-base font-semibold">24-45 mins</span></p>
     </div>
     <hr>
-      <div class="item">
-          <button class="delete-btn"><img src="assets/images/delete.svg" alt=""></button>
+      <div *ngFor="let item of items" class="item">
+          <button class="delete-btn" (click)="removeItem(item)"><img src="assets/images/delete.svg" alt=""></button>
           <div class="item-details">
               <div class="item-name-price">
-              <span class="block text-sm pl-1.5 leading-normal font-bold w-30">Hot Big Plantain</span>
-              <span class="text-lg pl-1.5 mt-1.5 leading-normal font-semibold">₦1,400</span>
+              <span class="block text-sm pl-1.5 leading-normal font-bold w-30">{{ item.name }}</span>
+              <span class="text-lg pl-1.5 mt-1.5 leading-normal font-semibold">₦{{ item.price }}</span>
               </div>
               <div class="quantity">
-              <button id="quantity-btn minus"><i class="fa-solid fa-minus" style="color: #464749;"></i></button>
-              <input id="number" type="number" min="1" class="quantity-input" value="1">
-              <button id="quantity-btn plus"><i class="fa-solid fa-plus" style="color: #464749;"></i></button>
+              <button (click)="decreaseQuantity(item)"><i class="fa-solid fa-minus" style="color: #464749;"></i></button>
+              <input id="number" type="number" min="1" class="quantity-input" [(ngModel)]="item.quantity">
+              <button (click)="increaseQuantity(item)"><i class="fa-solid fa-plus" style="color: #464749;"></i></button>
               </div>
           </div>
           
       </div>
-      <div class="item">
-        <button class="delete-btn"><img src="assets/images/delete.svg" alt=""></button>
-        <div class="item-details">
-            <div class="item-name-price">
-            <span class="block text-sm pl-1.5 leading-normal font-bold w-30">A use case where the item name breaks in two or more line</span>
-            <span class="text-lg pl-1.5 mt-1.5 leading-normal font-semibold">₦1,400</span>
-            </div>
-            <div class="quantity">
-            <button id="quantity-btn minus"><i class="fa-solid fa-minus" style="color: #464749;"></i></button>
-            <input id="number" type="number" min="1" class="quantity-input" value="1">
-            <button id="quantity-btn plus"><i class="fa-solid fa-plus" style="color: #464749;"></i></button>
-            </div>
-        </div>
-        
-    </div>
-    <div class="item">
-      <button class="delete-btn"><img src="assets/images/delete.svg" alt=""></button>
-      <div class="item-details">
-          <div class="item-name-price">
-          <span class="block text-sm pl-1.5 leading-normal font-bold w-30">A use case where the item name breaks in two or more line</span>
-          <span class="text-lg pl-1.5 mt-1.5 leading-normal font-semibold">₦1,400</span>
-          </div>
-          <div class="quantity">
-          <button id="quantity-btn minus"><i class="fa-solid fa-minus" style="color: #464749;"></i></button>
-          <input id="number" type="number" min="1" class="quantity-input" value="1">
-          <button id="quantity-btn plus"><i class="fa-solid fa-plus" style="color: #464749;"></i></button>
-          </div>
-      </div>
-      
-  </div>
   <hr>
   <div class="flex items-center justify-between">
     <span class="text-base">Subtotal:</span>
-    <span class="text-base font-semibold">₦3,600</span>
+    <span class="text-base font-semibold">₦{{ calculateSubtotal() }}</span>
 </div>
 <div class="flex items-center justify-between">
   <span class="text-base">Delivery Fee:</span>
-  <span class="text-base font-semibold">₦400</span>
+  <span class="text-base font-semibold">₦{{ deliveryFeePerItem * items.length }}</span>
 </div>
 <div class="flex items-center justify-between">
   <span class="text-base">Discount</span>
@@ -72,115 +83,46 @@
 </div>
 <div class="flex items-center justify-between">
   <span class="text-base">VAT:</span>
-  <span class="text-base font-semibold">₦300</span>
+  <span class="text-base font-semibold">₦{{ calculateVAT() }}</span>
 </div>
 <div class="flex items-center justify-between">
   <span class="text-base font-semibold">Total</span>
-  <span class="text-base font-semibold">₦7,600</span>
+  <span class="text-base font-semibold">₦{{ calculateCheckTotal() }}</span>
 </div>
-<button class="checkout-btn btn-green mt-5">Pay & Checkout</button>
+<button class="checkout-btn btn-green mt-5"  (click)="completePayment()">Pay & Checkout</button>
 <button class="clear-btn btn-green">Back to Shopping</button>
     </div>
     
   </div>
 
-<!-- Cart Full Page Ends -->
-
 <!-- Cart Full Page Start -->
-<div class="hidden">
-    <div class="font-sans bg-white p-2.5 rounded-lg shadow max-w-sm shrink-0 mx-auto m-40">
-      <div class="p-2.5 mb-2.5">
-        <div class="dis flex items-center justify-between">
-          <button class="btn pt-1 pb-0 px-1.5 ml-1"><i class="fa-solid fa-x" style="color: #fcfcfd;"></i></button>
-        <span class="whitespace-nowrap text-lg">My Cart</span>
-        <div class="icon mr-1"><img src="assets/images/cart.svg" alt=""></div>
-        </div>
-      </div>
-      <p class="flex items-center justify-between my-3">
-        <span class="text-base">Total item(s) in Cart:</span> <span class="text-right mr-2.5 text-base font-semibold">6</span></p>
-      <hr>
-        <div class="item">
-            <button class="delete-btn"><img src="assets/images/delete.svg" alt=""></button>
-            <div class="item-details">
-                <div class="item-name-price">
-                <span class="block text-sm pl-1.5 leading-normal font-bold w-30">Hot Big Plantain</span>
-                <span class="text-lg pl-1.5 mt-1.5 leading-normal font-semibold">₦1,400</span>
-                </div>
-                <div class="quantity">
-                <button id="quantity-btn minus"><i class="fa-solid fa-minus" style="color: #464749;"></i></button>
-                <input id="number" type="number" min="1" class="quantity-input" value="1">
-                <button id="quantity-btn plus"><i class="fa-solid fa-plus" style="color: #464749;"></i></button>
-                </div>
-            </div>
-            
-        </div>
-        <div class="item">
-          <button class="delete-btn"><img src="assets/images/delete.svg" alt=""></button>
-          <div class="item-details">
-              <div class="item-name-price">
-              <span class="block text-sm pl-1.5 leading-normal font-bold w-30">A use case where the item name breaks in two or more line</span>
-              <span class="text-lg pl-1.5 mt-1.5 leading-normal font-semibold">₦1,400</span>
-              </div>
-              <div class="quantity">
-              <button id="quantity-btn minus"><i class="fa-solid fa-minus" style="color: #464749;"></i></button>
-              <input id="number" type="number" min="1" class="quantity-input" value="1">
-              <button id="quantity-btn plus"><i class="fa-solid fa-plus" style="color: #464749;"></i></button>
-              </div>
-          </div>
-          
-      </div>
-      <div class="item">
-        <button class="delete-btn"><img src="assets/images/delete.svg" alt=""></button>
-        <div class="item-details">
-            <div class="item-name-price">
-            <span class="block text-sm pl-1.5 leading-normal font-bold w-30">A use case where the item name breaks in two or more line</span>
-            <span class="text-lg pl-1.5 mt-1.5 leading-normal font-semibold">₦1,400</span>
-            </div>
-            <div class="quantity">
-            <button id="quantity-btn minus"><i class="fa-solid fa-minus" style="color: #464749;"></i></button>
-            <input id="number" type="number" min="1" class="quantity-input" value="1">
-            <button id="quantity-btn plus"><i class="fa-solid fa-plus" style="color: #464749;"></i></button>
-            </div>
-        </div>
-        
-    </div>
-    <hr>
-    <div class="flex items-center justify-between">
-      <span>Total</span>
-      <span class="total-amount text-right mr-2.5 text-base">₦7,600</span>
-  </div>
-  <button class="checkout-btn text-base">Proceed to Checkout: <span>₦7,600</span></button>
-  <button class="clear-btn">Clear Cart</button>
-      </div>
-      
-    </div>
-
-  <!-- Cart Full Page Ends -->
   <!-- Cart Empty Page start -->
-  <div class="hidden">
-    <div class="font-sans bg-white p-2.5 rounded-lg shadow max-w-sm shrink-0 mx-auto m-40">
-      <div class="p-2.5 mb-2.5">
-        <div class="dis flex items-center justify-between">
-          <button class="btn text-xs ml-1"><i class="fa-solid fa-x" style="color: #fcfcfd;"></i></button>
-        <span class="whitespace-nowrap text-sm">My Cart</span>
-        <div class="icon mr-1">
-          <img src="assets/images/cart.svg" alt="">
+  <ng-template #emptyCart>
+    <div>
+      <div *ngIf="items.length === 0 && !isCheckoutOpen" class="font-sans bg-white p-2.5 rounded-lg shadow max-w-sm shrink-0 mx-auto m-40">
+        <div class="p-2.5 mb-2.5">
+          <div class="dis flex items-center justify-between">
+            <button class="btn text-xs ml-1" (click)="closeCart()"><i class="fa-solid fa-x" style="color: #fcfcfd;"></i></button>
+          <span class="whitespace-nowrap text-xl">My Cart</span>
+          <div class="icon mr-1">
+            <img src="assets/images/cart.svg" alt="">
+          </div>
+          </div>
         </div>
+        <div class="flex flex-col justify-between items-center">
+          <img src="assets/images/empty-cart.svg" alt="">
+          <h1 class="text-4xl font-bold p-1 leading-normal">Add items</h1>
+          <span class="text-base text-center">Your cart is empty, add items from vendors.</span>
+          <span class="text-base text-center">Your cart will appear here</span>
         </div>
+        <button class="back-btn mb-5">Back to shopping</button>
       </div>
-      <div class="flex flex-col justify-between items-center">
-        <img src="assets/images/empty-cart.svg" alt="">
-        <h1 class="text-4xl font-bold p-1 leading-normal">Add items</h1>
-        <span class="text-base text-center">Your cart is empty, add items from vendors.</span>
-        <span class="text-base text-center">Your cart will appear here</span>
-      </div>
-      <button class="back-btn mb-5">Back to shopping</button>
     </div>
-  </div>
+  </ng-template>
   <!-- Cart Empty Page ends -->
 
     <!-- Success Cart Page Start -->
-    <div class="p-2.5 rounded-lg shadow max-w-sm shrink-0 mx-auto m-40 cart-success font-sans flex flex-col justify-items-center items-center">
+    <div *ngIf="isPaymentSuccessful" class="p-2.5 rounded-lg shadow max-w-sm shrink-0 mx-auto m-40 cart-success font-sans flex flex-col justify-items-center items-center">
       <div class="my-4">
         <img src="assets/images/success-logo.svg" alt="">
       </div>
@@ -190,8 +132,8 @@
       <h2 class="text-4xl font-bold mb-3">Success!</h2>
       <p class="text-center text-sm my-4">Congratulations! your payment has been successfully processed. Thank you for choosing our service</p>
       <div class="buttons mb-3">
-        <button class="home">Go Home</button>
-        <button class="order-tracking">Order Tracking</button>
+        <a routerLink="/home"><button class="home">Go Home</button></a>
+        <a routerLink="/order-tracking"><button class="order-tracking">Order Tracking</button></a>
       </div>
     </div>
     <!-- Success Cart page Ends -->

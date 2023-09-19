@@ -19,6 +19,7 @@ import { LoginModule } from './pages/authentication/login/login.module';
 import { HotmealsComponent } from './hotmeals/hotmeals.component';
 import { ClickOutsideDirective } from './click-outside.directive';
 import { CartEmptyComponent } from './cart/cart-empty/cart-empty.component';
+import { FormsModule } from '@angular/forms';
 
 
 // import { VendorComponent } from './pages/authentication/vendor/vendor.component';
@@ -44,7 +45,8 @@ import { CartEmptyComponent } from './cart/cart-empty/cart-empty.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LoginModule
+    LoginModule,
+    FormsModule
   ],
 
   providers: [],

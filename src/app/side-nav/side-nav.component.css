@@ -19,19 +19,6 @@
     right: 0; /* Show the side nav */
   }
   
-  .logo {
-    padding: 20px;
-    text-align: center;
-    font-size: 24px;
-  }
-
-  
-  .nav-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
   .nav-links li a{
     padding: 20px 30px;
     display: flex;
