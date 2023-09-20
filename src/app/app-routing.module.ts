@@ -4,6 +4,8 @@ import { OrderComponent } from './order/order.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AboutComponent } from './pages/homepages/about/about.component';
 import { HotmealsComponent } from './hotmeals/hotmeals.component';
+import { CartComponent } from './cart/cart.component';
+import { OrderTrackingComponent } from './order-tracking/order-tracking.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -11,6 +13,8 @@ const routes: Routes = [
   { path: 'contactus', component: ContactUsComponent},
   { path: 'aboutus', component: AboutComponent},
   { path: 'hotmeal', component: HotmealsComponent},
+  { path: 'cart', component: CartComponent},
+  { path: 'order-tracking', component: OrderTrackingComponent},
 
   {
     path: '',

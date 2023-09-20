@@ -11,10 +11,15 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { OrderTrackComponent } from './order-track/order-track.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { SideNavComponent } from './side-nav/side-nav.component';
+
 
 
 import { LoginModule } from './pages/authentication/login/login.module';
 import { HotmealsComponent } from './hotmeals/hotmeals.component';
+import { ClickOutsideDirective } from './click-outside.directive';
+import { CartEmptyComponent } from './cart/cart-empty/cart-empty.component';
+import { FormsModule } from '@angular/forms';
 
 
 // import { VendorComponent } from './pages/authentication/vendor/vendor.component';
@@ -30,14 +35,18 @@ import { HotmealsComponent } from './hotmeals/hotmeals.component';
     OrderComponent,
     OrderTrackingComponent,
     OrderTrackComponent,
-    HotmealsComponent
+    HotmealsComponent,
+    SideNavComponent,
+    ClickOutsideDirective,
+    CartEmptyComponent
 
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LoginModule
+    LoginModule,
+    FormsModule
   ],
 
   providers: [],

@@ -1,22 +1,12 @@
-.breadcrumb {
-    display: flex;
-    align-items: center;
-    font-size: 25px;
-    margin-bottom: 10px;
-    padding-left: 30px;
-    padding-top: 5px;
-    color: #2D2D2D;
-  }
+section {
+  padding: 0px 10% 0px;
+}
   
   .back-button {
     background: none;
     border: none;
     cursor: pointer;
     margin-right: 10px;
-  }
-  
-  .back-button i {
-    font-size: 24px;
   }
   
   .breadcrumb span {
@@ -34,55 +24,9 @@
   }
   /* Nav Indicator Style ends */
 
-.hold {
-    display: flex;
-    margin: 30px auto;
-    padding: 20px;
-    max-width: 1200px;
-  }
-  .hold span {
-    color: #5C7E64;
-  }
   .order-details {
-    padding: 20px;
-    border-radius: 10px;
     background-color: #f7f7f7;
-    width: calc(100% - 450px);
   }
-  
-  .order-details h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .order-details-content {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .detail {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-
-  .address{
-    display: block;
-    align-self: stretch;
-  }
-  
-  .hold .detail-value {
-    font-weight: bold;
-    color: #2D2D2D;
-  }
-  
-  
-  .progress-bar1 {
-    position: relative;
-    width: 400px;
-    height: 600px;
-    margin: 0 auto;
-}
 
 .status-monitor {
     font-size: 20px;
@@ -144,4 +88,24 @@
     top: 100%;
     transform: translateY(5px);
     width: 140px;
+}
+
+@media screen and (max-width: 768px) {
+  .hold{
+      flex-direction: column; /* Change to column layout */
+      align-items: center; /* Center items horizontally */
+  }
+  .order-details {
+    width: 100%; /* Make the order details section take full width */
+    margin-bottom: 20px; /* Add some spacing between sections */
+  }
+
+  .order-details .text-base {
+    font-size: 0.875rem; /* Change to text-sm size */
+  }
+
+  .progress-bar1 {
+    width: 100%; /* Make the progress bar section take full width */
+    min-height: 500px;
+  }
 }

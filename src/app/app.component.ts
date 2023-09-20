@@ -28,4 +28,5 @@ export class AppComponent {
         this.sideNavStateService.showSideNav = false;
       }
     }
+    
 }
