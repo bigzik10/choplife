@@ -1,5 +1,9 @@
-<div class="breadcrumb">
-    <button class="back-button"><i class="fas fa-arrow-left"></i></button>
+
+
+
+<section>
+  <div class="breadcrumb flex items-center text-base mb-2.5 whitespace-nowrap pt-1.5 pl-7" style="color: #2D2D2D;">
+    <button class="back-button text-sm"><i class="fas fa-arrow-left"></i></button>
     <span id="home"><a routerLink="/">Home</a></span>
     <i class="fas fa-chevron-right"></i>
     <span>Profile</span>
@@ -7,80 +11,80 @@
     <span>Order Tracking</span>
   </div> 
 
-
-    <div class="hold">
-        <div class="order-details">
-            <h2>Order Details</h2>
-            <div class="order-details-content">
-              <div class="detail">
-                <span>Order Placed</span>
-                <span class="detail-value">23-Feb 2021-05:33PM</span>
-              </div>
-              <div class="detail">
-                <span>Total Paid</span>
-                <span class="detail-value">₦20,000.00</span>
-              </div>
-              <div class="detail">
-                <span>Order Id</span>
-                <span class="detail-value">W34567D5-CL</span>
-              </div>
-              <div class="detail">
-                <span>Payment Type</span>
-                <span class="detail-value">Card</span>
-              </div>
-              <div class="detail">
-                <span>Order Status</span>
-                <span class="detail-value">Ready for Pickup</span>
-              </div>
-              <div class="detail">
-                <span>Estimated Time</span>
-                <span class="detail-value">23-Feb 2021-05:33PM</span>
-              </div>
-              <div class="detail">
-                <span>Last Update</span>
-                <span class="detail-value">6 min ago</span>
-              </div>
-                  <h2>Customer Information</h2>
-                    <div class="detail">
-                      <span>Customer</span>
-                      <span class="detail-value">Mubarak Sharafadeen</span>
-                    </div>
-                    <div class="detail">
-                      <span>Phone</span>
-                      <span class="detail-value">234 8056410027</span>
-                    </div>
-                    <div class="detail">
-                      <span>Email</span>
-                      <span class="detail-value">user@gmail.com</span>
-                    </div>
-                    <div class="detail">
-                      <span>Pick up Address</span>
-                      <span class="detail-value address">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-                    </div>
+  <div class="hold flex mx-auto my-1.5 px-5 p-2">
+    <div class="order-details w-full p-3 rounded-xl">
+        <h2 class="text-xl mb-2.5">Order Details</h2>
+        <div class="flex flex-col">
+          <div class="flex justify-between mb-2.5">
+            <span class="text-base" style="color: #5C7E64;">Order Placed</span>
+            <span class="text-right text-base font-semibold" style="color: #2d2d2d;">23-Feb 2021-05:33PM</span>
           </div>
-    </div>
+          <div class="flex justify-between mb-2.5">
+            <span class="text-base" style="color: #5C7E64;">Total Paid</span>
+            <span class="text-right text-base font-semibold" style="color: #2d2d2d;">₦20,000.00</span>
+          </div>
+          <div class="flex justify-between mb-2.5">
+            <span class="text-base" style="color: #5C7E64;">Order Id</span>
+            <span class="text-right text-base font-semibold" style="color: #2d2d2d;">W34567D5-CL</span>
+          </div>
+          <div class="flex justify-between mb-2.5">
+            <span class="text-base" style="color: #5C7E64;">Payment Type</span>
+            <span class="text-right text-base font-semibold" style="color: #2d2d2d;">Card</span>
+          </div>
+          <div class="flex justify-between mb-2.5">
+            <span class="text-base" style="color: #5C7E64;">Order Status</span>
+            <span class="text-right text-base font-semibold" style="color: #2d2d2d;">Ready for Pickup</span>
+          </div>
+          <div class="flex justify-between mb-2.5">
+            <span class="text-base" style="color: #5C7E64;">Estimated Time</span>
+            <span class="text-right text-base font-semibold" style="color: #2d2d2d;">23-Feb 2021-05:33PM</span>
+          </div>
+          <div class="flex justify-between mb-2.5">
+            <span class="text-base" style="color: #5C7E64;">Last Update</span>
+            <span class="text-right text-base font-semibold" style="color: #2d2d2d;">6 min ago</span>
+          </div>
+            <h2 class="text-xl m-2.5 ehitespace-nowrap">Customer Information</h2>
+                <div class="flex justify-between mb-2.5">
+                  <span class="text-base" style="color: #5C7E64;">Customer</span>
+                  <span class="text-right text-base font-semibold" style="color: #2d2d2d;">Mubarak Sharafadeen</span>
+                </div>
+                <div class="flex justify-between mb-2.5">
+                  <span class="text-base" style="color: #5C7E64;">Phone</span>
+                  <span class="text-right text-base font-semibold" style="color: #2d2d2d;">234 8056410027</span>
+                </div>
+                <div class="flex justify-between mb-2.5">
+                  <span class="text-base" style="color: #5C7E64;">Email</span>
+                  <span class="text-right text-base font-semibold" style="color: #2d2d2d;">user@gmail.com</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-base" style="color: #5C7E64;">Pick up Address</span>
+                  <span class="text-right text-sm font-semibold w-56" style="color: #2d2d2d;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                </div>
+      </div>
+</div>
 
-    <div class="progress-bar1">
-      <h2 class="status-monitor">Order Status Monitor</h2>
-      <div class="progress-line"></div>
-      <div class="circle">
-        <span>Pending</span>
-        <p>23Feb 23-05:53PM</p>
-      </div>
-      <div class="circle">
-        <span>In progress</span>
-        <p>23Feb 23-05:53PM</p>
-      </div>
-      <div class="circle">
-        <span>Ready</span>
-        <p>23Feb 23-05:53PM</p>
-      </div>
-      <div class="circle">
-        <span>Delivered</span>
-        <p>23Feb 23-05:53PM</p>
-      </div>
-      </div>
-    </div>
+<div class="progress-bar1 relative h-auto w-full ml-10">
+  <h2 class="text-xl mb-2.5 whitespace-nowrap text-center">Order Status Monitor</h2>
+  <div class="progress-line"></div>
+  <div class="circle">
+    <span class="text-base" style="color: #5C7E64;">Pending</span>
+    <p>23Feb 23-05:53PM</p>
+  </div>
+  <div class="circle">
+    <span class="text-base" style="color: #5C7E64;">In progress</span>
+    <p>23Feb 23-05:53PM</p>
+  </div>
+  <div class="circle">
+    <span class="text-base" style="color: #5C7E64;">Ready</span>
+    <p>23Feb 23-05:53PM</p>
+  </div>
+  <div class="circle">
+    <span class="text-base" style="color: #5C7E64;">Delivered</span>
+    <p>23Feb 23-05:53PM</p>
+  </div>
+  </div>
+</div>
+</section>
 
         
   
