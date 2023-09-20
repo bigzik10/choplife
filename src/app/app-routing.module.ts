@@ -6,6 +6,7 @@ import { AboutComponent } from './pages/homepages/about/about.component';
 import { HotmealsComponent } from './hotmeals/hotmeals.component';
 import { CartComponent } from './cart/cart.component';
 import { OrderTrackingComponent } from './order-tracking/order-tracking.component';
+import { OrderTrackComponent } from './order-track/order-track.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'hotmeal', component: HotmealsComponent},
   { path: 'cart', component: CartComponent},
   { path: 'order-tracking', component: OrderTrackingComponent},
+  { path: 'order-track', component: OrderTrackComponent},
 
   {
     path: '',

@@ -1,12 +1,5 @@
-.breadcrumb {
-  display: flex;
-  align-items: center;
-  font-size: 25px;
-  /* margin-top: 10px; */
-  margin-bottom: 10px;
-  padding-left: 30px;
-  padding-top: 5px;
-  color: #2D2D2D;
+body {
+  padding: 0px 13% 0px;
 }
 
 .back-button {
@@ -17,7 +10,7 @@
 }
 
 .back-button i {
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .breadcrumb span {
@@ -39,8 +32,7 @@
 .order-page {
   border: 1px solid #ccc;
   border-radius: 10px;
-  margin-left: 60px;
-  margin-right: 60px;
+  margin: 10px 60px;
 }
 
 /* Order Cards Design Start */
@@ -87,31 +79,13 @@
     background-color: #ccc; /* Adjust the color as needed */
   }
   
-  .order-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px 0;
-    text-transform: uppercase;
-  }
-
-  .order-title span {
-    font-size:20px;
-    font-weight: bold;
-    font-family: Commissioner;
-  }
   
   .order-container p {
     margin-top: 10px;
     font-size: 20px;
   }
 
-  .order-count #total-order, #pending-order, #failed-order, #completed-order{
-    font-size: 25px;
-    font-weight: bold;
-    font-family: Commissioner;
-    margin: 10px 0;
-  }
+  
 
   .item-count {
     font-weight: bold;
@@ -162,7 +136,7 @@
   .export-button {
     border: none;
     border-radius: 5px;
-    padding: 15px;
+    padding: 7px 15px;
     font-size: 16px;
     cursor: pointer;
   }
@@ -183,6 +157,7 @@
     background-color: black;
     color: white;
     margin-right: 10px;
+    padding: 7px 15px;
   }
 
   table {
@@ -266,9 +241,10 @@
   }
 
   .filter-button {
-    margin-right: 0;
+    margin-right: 7px;
   }
 }
+
 
 
 

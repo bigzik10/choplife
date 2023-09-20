@@ -170,11 +170,6 @@
   }
 
   .customer-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    padding: 10px;
     max-width: 600px; /* Set a maximum width for responsiveness */
   }
   
@@ -187,9 +182,7 @@
     flex-wrap: wrap; /* Allow content to wrap on smaller screens */
   }
   
-  .center-text {
-    text-align: center;
-  }
+  
   
   .left-info,
   .right-info {
@@ -198,14 +191,11 @@
     margin: 5px 0; /* Add some margin for spacing */
   }
   
-  .left-info p,
+  /* .left-info p,
   .right-info p {
     margin: 0;
-  }
+  } */
   
-  strong {
-    font-weight: bold;
-  }
   
   /* Media query for responsiveness */
   @media (max-width: 768px) {
@@ -282,5 +272,15 @@
     }
   }
   
+  @media (max-width: 768px) {
+    .order-container {
+      flex-direction: column; /* Change to column layout */
+      align-items: center; /* Center align items */
+    }
   
+    .order {
+      margin: 5px 0;
+      width: 100%;
+    }
+  }
   

@@ -96,7 +96,7 @@ section {
       align-items: center; /* Center items horizontally */
   }
   .order-details {
-    width: 100%; /* Make the order details section take full width */
+    width: 350px; /* Make the order details section take full width */
     margin-bottom: 20px; /* Add some spacing between sections */
   }
 
@@ -105,7 +105,9 @@ section {
   }
 
   .progress-bar1 {
-    width: 100%; /* Make the progress bar section take full width */
+    width: 350px; /* Make the progress bar section take full width */
     min-height: 500px;
   }
+
+  
 }
