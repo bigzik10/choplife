@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginModule } from './pages/authentication/login/login.module';
+// import { LoginModule } from './pages/authentication/login/login.module';
 
 // import { VendorComponent } from './pages/authentication/vendor/vendor.component';
 
@@ -15,7 +15,7 @@ import { LoginModule } from './pages/authentication/login/login.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LoginModule
+
   ],
 
   providers: [],

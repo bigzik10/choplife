@@ -1,0 +1,14 @@
+/* font size */
+
+.f22{
+    font-size: 70px;
+}
+
+
+/* padding  $margin*/
+
+.padding6{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: 3rem;
+}

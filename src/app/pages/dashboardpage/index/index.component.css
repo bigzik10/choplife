@@ -1,0 +1,60 @@
+/* Margins start*/
+
+.m5{
+    margin-right: 9rem !important;
+}
+
+.m6{
+    margin-left: 2rem !important;
+}
+
+/* margin ends */
+
+
+.ecllipse{
+    position: absolute;
+    bottom: 1.95rem;
+    left: 17rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: black;
+}
+
+/* font size */
+
+.f10{
+    font-size: 12px;
+}
+
+
+
+
+.scroll{
+    overflow-y: scroll;
+    height: 100vh;
+    white-space: nowrap;
+    overflow-x: hidden;
+  }
+
+  .scroll {
+    /* Hide the scrollbar */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+  
+    /* Enable scrolling */
+    -webkit-overflow-scrolling: touch;
+    /* iOS Safari */
+    overflow-y: scroll;
+  }
+  
+  /* For WebKit-based browsers (Chrome, Safari) */
+  .scroll::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .scroll:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
