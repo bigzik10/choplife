@@ -1,0 +1,23 @@
+.bg-base {
+  background-color: #C1CF65 !important;
+}
+
+.title {
+  background-color: #ffc244;
+}
+
+.sub-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../../assets/images/subhero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-yellow-light {
+  background-color: #F2FFCD;
+}
+
+.bg-dark-base {
+  background-color: #2D2D2D;
+}

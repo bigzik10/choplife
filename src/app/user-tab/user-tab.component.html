@@ -1,0 +1,101 @@
+<head>
+  <link rel="stylesheet" href="https://bit.ly/stylesheeet" />
+</head>
+
+<div class="text-gray-500 text-sm">
+  <div class="flex space-x-10 justify-center">
+    <button *ngFor="let item of items" class="bg-gray-50 p-2 rounded-md">
+      <img [src]="item.image" alt="{{ item.name }} Logo">
+    </button>
+  </div>
+  <div class="flex items-center space-x-3 my-6">
+    <div class="vendor__line w-full bg-gray-100"></div>
+    <p class="w-full">Sign up with email</p>
+    <div class="vendor__line w-full bg-gray-100"></div>
+  </div>
+
+  <div>
+    <form action="#!" class="space-y-5">
+
+      <div class="grid grid-cols-2 gap-3">
+        <div class="flex flex-col space-y-2">
+          <label for="fname">First Name</label>
+          <input required type="text" name="fname" id="fname" placeholder="Sharafadeen"
+            class="outline-none p-2 rounded bg-gray-100">
+        </div>
+        <div class="flex flex-col space-y-2">
+          <label for="lname">Last Name</label>
+          <input required type="text" name="lname" id="lname" placeholder="Mubarak"
+            class="outline-none p-2 rounded bg-gray-100">
+        </div>
+      </div>
+
+      <div class="flex flex-col space-y-2">
+        <label for="phone">Phone Number</label>
+        <div class="rounded bg-gray-100 flex items-center px-2">
+          <p class="border-r pr-2">+234</p>
+          <input required type="tel" name="phone" id="phone" placeholder="909 9048 059"
+            class="outline-none p-2 bg-transparent">
+        </div>
+      </div>
+
+      <div class="flex flex-col space-y-2">
+        <label for="email">Email</label>
+        <input required type="email" name="email" id="email" placeholder="user@email.com"
+          class="outline-none p-2 rounded bg-gray-100">
+      </div>
+
+      <div class="flex space-x-2">
+        <input required type="checkbox" name="agree" id="agree">
+        <label for="agree">I have read and accept the ChopLife <a href="#!" class="text-primary font-semibold">privacy
+            policy</a></label>
+      </div>
+
+      <button (click)="openOTPModal()" class="py-3 bg-primary text-white rounded-md w-full font-semibold">Sign
+        up</button>
+    </form>
+
+    <p class="text-center mt-6">Already have an account, <a href="#!" class="text-primary font-semibold">Log in</a></p>
+  </div>
+</div>
+
+<!-- OTP -->
+<div *ngIf="OTPModal" class="otp-modal">
+  <!-- <div class="custom-modal"> -->
+  <div class="flex md:w-2/6 justify-end">
+    <div class="bg-white relative w-full px-10 py-9 main-modal">
+      <button (click)="closeOTPModal()" class="absolute top-10 right-10">
+        <i class="fas fa-arrow-left fa-sm"></i>
+      </button>
+      <h3 class="absolute top-10 left-10 font-bold text-xl">Authentication</h3>
+      <div class="mt-16">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor.</p>
+
+        <p class="text-sm text-gray-500 my-6">Enter the OTP sent to your email address</p>
+        <form action="">
+          <div class="grid grid-cols-5 gap-2 w-full font-bold text-xl">
+            <input type="password" name="otp" id="otp" maxlength="1"
+              class="bg-gray-100 rounded p-3 outline-none text-center" placeholder="*">
+            <input type="password" name="otp" id="otp" maxlength="1"
+              class="bg-gray-100 rounded p-3 outline-none text-center" placeholder="*">
+            <input type="password" name="otp" id="otp" maxlength="1"
+              class="bg-gray-100 rounded p-3 outline-none text-center" placeholder="*">
+            <input type="password" name="otp" id="otp" maxlength="1"
+              class="bg-gray-100 rounded p-3 outline-none text-center" placeholder="*">
+            <input type="password" name="otp" id="otp" maxlength="1"
+              class="bg-gray-100 rounded p-3 outline-none text-center" placeholder="*">
+          </div>
+          <p class="text-sm text-gray-500 my-5">Note! The OTP expires after 20mins.`<br>I did not get the One-Time
+            Password
+            (OTP)?<a href="#!" class="text-primary font-semibold">Send again</a></p>
+
+          <button type="submit" class="py-3 bg-primary text-white rounded-md w-full font-semibold">Submit</button>
+        </form>
+
+        <p class="text-center mt-6">Already have an account, <a href="#!" class="text-primary font-semibold">Log in</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
