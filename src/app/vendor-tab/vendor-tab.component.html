@@ -1,0 +1,59 @@
+<head>
+  <link rel="stylesheet" href="https://bit.ly/stylesheeet" />
+</head>
+
+<div class="text-gray-500 text-sm my-6">
+  <div>
+    <form action="#!" class="space-y-5">
+      <div class="grid grid-cols-2 gap-3">
+        <div class="flex flex-col space-y-2">
+          <label for="country">Country</label>
+          <select name="country" id="country" class="outline-none p-2 rounded bg-gray-100">
+            <option value="">--Please Select--</option>
+          </select>
+        </div>
+        <div class="flex flex-col space-y-2">
+          <label for="city">City</label>
+          <select name="city" id="city" class="outline-none p-2 rounded bg-gray-100">
+            <option value="">--Please Select--</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="flex flex-col space-y-2">
+        <label for="bname">Business Name</label>
+        <input type="text" name="bname" id="bname" placeholder="User business"
+          class="outline-none p-2 rounded bg-gray-100">
+      </div>
+
+      <div class="grid grid-cols-2 gap-3">
+        <div class="flex flex-col space-y-2">
+          <label for="fname">First Name</label>
+          <input type="text" name="fname" id="fname" placeholder="Sharafadeen"
+            class="outline-none p-2 rounded bg-gray-100">
+        </div>
+        <div class="flex flex-col space-y-2">
+          <label for="lname">Last Name</label>
+          <input type="text" name="lname" id="lname" placeholder="Mubarak" class="outline-none p-2 rounded bg-gray-100">
+        </div>
+      </div>
+
+
+      <div class="flex flex-col space-y-2">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="user@email.com"
+          class="outline-none p-2 rounded bg-gray-100">
+      </div>
+
+      <div class="flex space-x-2">
+        <input type="checkbox" name="agree" id="agree">
+        <label for="agree">I have read and accept the ChopLife <a href="#!" class="text-primary font-semibold">privacy
+            policy</a></label>
+      </div>
+
+      <button type="submit" class="py-3 bg-primary text-white rounded-md w-full font-semibold">Sign up</button>
+    </form>
+
+    <p class="text-center mt-6">Already a vendor, <a href="#!" class="text-primary font-semibold">Log in</a></p>
+  </div>
+</div>

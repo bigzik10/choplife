@@ -1,0 +1,29 @@
+.vendor__line {
+  height: 0.2px;
+}
+
+.bg-primary {
+  background: #5c7e64 !important;
+}
+
+.text-primary {
+  color: #5c7e64 !important;
+}
+
+.otp-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  z-index: 9999;
+}
+
+.main-modal {
+  height: 95vh;
+  overflow-y: scroll;
+}
