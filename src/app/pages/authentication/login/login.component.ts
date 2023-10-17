@@ -7,10 +7,18 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+
+
+
+
+  constructor(private _route: Router) {}
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    // this.goto()
   }
 
+  goto(){
+    this._route.navigate(['/dashboardpage'])
+  }
 
 
 }

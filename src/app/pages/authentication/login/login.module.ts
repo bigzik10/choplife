@@ -6,6 +6,7 @@ import { LoginComponent } from './login.component';
 // import { VendorComponent } from '../vendor/vendor.component';
 // import { VerificationComponent } from '../verification/verification.component';
 import { SignupModule } from '../signup/signup.module';
+// import { IndexModule } from '../../dashboardpage/index/index.module';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { SignupModule } from '../signup/signup.module';
   imports: [
     CommonModule,
     LoginRoutingModule,
-    SignupModule
+    SignupModule,
+    
   ],
 
   exports:[
